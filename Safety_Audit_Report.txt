@@ -1,0 +1,2122 @@
+==================================================
+🏥  AUTONOMOUS DDI AUDITOR - SAFETY REPORT        
+==================================================
+
+--------------------------------------------------
+👤 Examining: Vihaan Suryavanshi (Age: 31)
+🏥 Dept: Neurology | Diagnosis: Neuropathy
+💊 Medications: Valproate, Insulin, Losartan
+--------------------------------------------------
+   Analysing pair: Valproate + Insulin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Valproate + Losartan
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Insulin + Losartan
+      📖 Literature: ⚠️ KNOWN RISK: Found 16 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+
+--------------------------------------------------
+👤 Examining: Rohan Mehta (Age: 72)
+🏥 Dept: Neurology | Diagnosis: Epilepsy
+💊 Medications: Pregabalin, Lisinopril, Metformin
+--------------------------------------------------
+   Analysing pair: Pregabalin + Lisinopril
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Pregabalin + Metformin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Lisinopril + Metformin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+
+--------------------------------------------------
+👤 Examining: Simran Kulkarni (Age: 24)
+🏥 Dept: Cardiology | Diagnosis: Heart Failure
+💊 Medications: Clopidogrel, Aspirin, Insulin, Meloxicam, Pantoprazole, Sitagliptin
+--------------------------------------------------
+   Analysing pair: Clopidogrel + Aspirin
+      📖 Literature: ⚠️ KNOWN RISK: Found 285 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.19).
+
+   Analysing pair: Clopidogrel + Insulin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Clopidogrel + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Clopidogrel + Pantoprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 57 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Clopidogrel + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Aspirin + Insulin
+      📖 Literature: ⚠️ KNOWN RISK: Found 16 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Aspirin + Meloxicam
+      📖 Literature: ⚠️ KNOWN RISK: Found 13 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.18).
+
+   Analysing pair: Aspirin + Pantoprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 15 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.21).
+
+   Analysing pair: Aspirin + Sitagliptin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Insulin + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Insulin + Pantoprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Insulin + Sitagliptin
+      📖 Literature: ⚠️ KNOWN RISK: Found 29 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Meloxicam + Pantoprazole
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Meloxicam + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Pantoprazole + Sitagliptin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+
+--------------------------------------------------
+👤 Examining: Meera Gaikwad (Age: 63)
+🏥 Dept: Orthopedics | Diagnosis: Arthritis
+💊 Medications: Ibuprofen, Ranitidine, Calcium/Vit D, Carbamazepine
+--------------------------------------------------
+   Analysing pair: Ibuprofen + Ranitidine
+      📖 Literature: ⚠️ KNOWN RISK: Found 8 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Ibuprofen + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Ibuprofen + Carbamazepine
+      📖 Literature: ⚠️ KNOWN RISK: Found 9 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Ranitidine + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Ranitidine + Carbamazepine
+      📖 Literature: ⚠️ KNOWN RISK: Found 17 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Calcium/Vit D + Carbamazepine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+
+--------------------------------------------------
+👤 Examining: Gauri Pawar (Age: 19)
+🏥 Dept: Cardiology | Diagnosis: Coronary Artery Disease
+💊 Medications: Clopidogrel, Furosemide, Carvedilol, Levodopa, Hydrochlorothiazide
+--------------------------------------------------
+   Analysing pair: Clopidogrel + Furosemide
+      📖 Literature: ⚠️ KNOWN RISK: Found 8 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Clopidogrel + Carvedilol
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Clopidogrel + Levodopa
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Clopidogrel + Hydrochlorothiazide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Furosemide + Carvedilol
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Furosemide + Levodopa
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.20).
+
+   Analysing pair: Furosemide + Hydrochlorothiazide
+      📖 Literature: ⚠️ KNOWN RISK: Found 38 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.36).
+
+   Analysing pair: Carvedilol + Levodopa
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Carvedilol + Hydrochlorothiazide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Levodopa + Hydrochlorothiazide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.20).
+
+
+--------------------------------------------------
+👤 Examining: Rohan Saxena (Age: 57)
+🏥 Dept: Endocrinology | Diagnosis: Type 2 Diabetes
+💊 Medications: Glipizide, Empagliflozin, Carbamazepine, Meloxicam, Losartan, Metformin
+--------------------------------------------------
+   Analysing pair: Glipizide + Empagliflozin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Glipizide + Carbamazepine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.19).
+
+   Analysing pair: Glipizide + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.19).
+
+   Analysing pair: Glipizide + Losartan
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Glipizide + Metformin
+      📖 Literature: ⚠️ KNOWN RISK: Found 15 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Empagliflozin + Carbamazepine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Empagliflozin + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.05).
+
+   Analysing pair: Empagliflozin + Losartan
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Empagliflozin + Metformin
+      📖 Literature: ⚠️ KNOWN RISK: Found 7 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.04).
+
+   Analysing pair: Carbamazepine + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Carbamazepine + Losartan
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Carbamazepine + Metformin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Meloxicam + Losartan
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Meloxicam + Metformin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.05).
+
+   Analysing pair: Losartan + Metformin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+
+--------------------------------------------------
+👤 Examining: Gauri Bhatia (Age: 26)
+🏥 Dept: Gastroenterology | Diagnosis: Gastritis
+💊 Medications: Pantoprazole, Famotidine, Ranitidine, Loperamide, Omeprazole
+--------------------------------------------------
+   Analysing pair: Pantoprazole + Famotidine
+      📖 Literature: ⚠️ KNOWN RISK: Found 9 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Pantoprazole + Ranitidine
+      📖 Literature: ⚠️ KNOWN RISK: Found 15 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Pantoprazole + Loperamide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Pantoprazole + Omeprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 113 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Famotidine + Ranitidine
+      📖 Literature: ⚠️ KNOWN RISK: Found 69 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.34).
+
+   Analysing pair: Famotidine + Loperamide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Famotidine + Omeprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 26 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Ranitidine + Loperamide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Ranitidine + Omeprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 44 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Loperamide + Omeprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+
+--------------------------------------------------
+👤 Examining: Rani Das (Age: 58)
+🏥 Dept: Cardiology | Diagnosis: Coronary Artery Disease
+💊 Medications: Atorvastatin, Furosemide, Spironolactone, Ondansetron
+--------------------------------------------------
+   Analysing pair: Atorvastatin + Furosemide
+      📖 Literature: ⚠️ KNOWN RISK: Found 9 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Atorvastatin + Spironolactone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Atorvastatin + Ondansetron
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Furosemide + Spironolactone
+      📖 Literature: ⚠️ KNOWN RISK: Found 24 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Furosemide + Ondansetron
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Spironolactone + Ondansetron
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+
+--------------------------------------------------
+👤 Examining: Lakshmi Kumar (Age: 35)
+🏥 Dept: Neurology | Diagnosis: Parkinson's Disease
+💊 Medications: Levodopa, Insulin, Pregabalin
+--------------------------------------------------
+   Analysing pair: Levodopa + Insulin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Levodopa + Pregabalin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Insulin + Pregabalin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+
+--------------------------------------------------
+👤 Examining: Kiara Sen (Age: 1)
+🏥 Dept: Pediatrics | Diagnosis: Fever
+💊 Medications: Cetirizine, Ibuprofen, Carvedilol
+--------------------------------------------------
+   Analysing pair: Cetirizine + Ibuprofen
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.22).
+
+   Analysing pair: Cetirizine + Carvedilol
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Ibuprofen + Carvedilol
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+
+--------------------------------------------------
+👤 Examining: Kiara Malhotra (Age: 86)
+🏥 Dept: Neurology | Diagnosis: Neuropathy
+💊 Medications: Levodopa, Losartan, Metformin, Clopidogrel
+--------------------------------------------------
+   Analysing pair: Levodopa + Losartan
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Levodopa + Metformin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Levodopa + Clopidogrel
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Losartan + Metformin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Losartan + Clopidogrel
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Metformin + Clopidogrel
+      📖 Literature: ⚠️ KNOWN RISK: Found 7 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+
+--------------------------------------------------
+👤 Examining: Siddharth Gupta (Age: 23)
+🏥 Dept: Cardiology | Diagnosis: Heart Failure
+💊 Medications: Lisinopril, Atorvastatin, Spironolactone, Sitagliptin, Naproxen
+--------------------------------------------------
+   Analysing pair: Lisinopril + Atorvastatin
+      📖 Literature: ⚠️ KNOWN RISK: Found 8 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Lisinopril + Spironolactone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Lisinopril + Sitagliptin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Lisinopril + Naproxen
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Atorvastatin + Spironolactone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Atorvastatin + Sitagliptin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Atorvastatin + Naproxen
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Spironolactone + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Spironolactone + Naproxen
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Sitagliptin + Naproxen
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+
+--------------------------------------------------
+👤 Examining: Ishaan Dutta (Age: 43)
+🏥 Dept: Gastroenterology | Diagnosis: Peptic Ulcer
+💊 Medications: Loperamide, Ondansetron, Sumatriptan, Carbamazepine, Meloxicam, Calcium/Vit D
+--------------------------------------------------
+   Analysing pair: Loperamide + Ondansetron
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Loperamide + Sumatriptan
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Loperamide + Carbamazepine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Loperamide + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Loperamide + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Ondansetron + Sumatriptan
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Ondansetron + Carbamazepine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.18).
+
+   Analysing pair: Ondansetron + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.18).
+
+   Analysing pair: Ondansetron + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Sumatriptan + Carbamazepine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Sumatriptan + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Sumatriptan + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Carbamazepine + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Carbamazepine + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Meloxicam + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+
+--------------------------------------------------
+👤 Examining: Rahul Patel (Age: 22)
+🏥 Dept: Endocrinology | Diagnosis: Hypothyroidism
+💊 Medications: Glipizide, Levothyroxine, Clopidogrel
+--------------------------------------------------
+   Analysing pair: Glipizide + Levothyroxine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Glipizide + Clopidogrel
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Levothyroxine + Clopidogrel
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+
+--------------------------------------------------
+👤 Examining: Ayaan Reddy (Age: 63)
+🏥 Dept: Orthopedics | Diagnosis: Arthritis
+💊 Medications: Naproxen, Hydrochlorothiazide, Digoxin, Omeprazole, Sitagliptin, Amlodipine
+--------------------------------------------------
+   Analysing pair: Naproxen + Hydrochlorothiazide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Naproxen + Digoxin
+      📖 Literature: ⚠️ KNOWN RISK: Found 6 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Naproxen + Omeprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.22).
+
+   Analysing pair: Naproxen + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Naproxen + Amlodipine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Hydrochlorothiazide + Digoxin
+      📖 Literature: ⚠️ KNOWN RISK: Found 13 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Hydrochlorothiazide + Omeprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Hydrochlorothiazide + Sitagliptin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Hydrochlorothiazide + Amlodipine
+      📖 Literature: ⚠️ KNOWN RISK: Found 33 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.18).
+
+   Analysing pair: Digoxin + Omeprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 43 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Digoxin + Sitagliptin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Digoxin + Amlodipine
+      📖 Literature: ⚠️ KNOWN RISK: Found 10 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Omeprazole + Sitagliptin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Omeprazole + Amlodipine
+      📖 Literature: ⚠️ KNOWN RISK: Found 7 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Sitagliptin + Amlodipine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+
+--------------------------------------------------
+👤 Examining: Saanvi Singh (Age: 48)
+🏥 Dept: Gastroenterology | Diagnosis: Peptic Ulcer
+💊 Medications: Famotidine, Ranitidine, Diclofenac, Naproxen, Omeprazole
+--------------------------------------------------
+   Analysing pair: Famotidine + Ranitidine
+      📖 Literature: ⚠️ KNOWN RISK: Found 69 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.34).
+
+   Analysing pair: Famotidine + Diclofenac
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Famotidine + Naproxen
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Famotidine + Omeprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 26 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Ranitidine + Diclofenac
+      📖 Literature: ⚠️ KNOWN RISK: Found 7 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Ranitidine + Naproxen
+      📖 Literature: ⚠️ KNOWN RISK: Found 6 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Ranitidine + Omeprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 44 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Diclofenac + Naproxen
+      📖 Literature: ⚠️ KNOWN RISK: Found 66 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Diclofenac + Omeprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 19 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Naproxen + Omeprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.22).
+
+
+--------------------------------------------------
+👤 Examining: Tanvi Sawant (Age: 73)
+🏥 Dept: Gastroenterology | Diagnosis: Peptic Ulcer
+💊 Medications: Pantoprazole, Famotidine, Ranitidine
+--------------------------------------------------
+   Analysing pair: Pantoprazole + Famotidine
+      📖 Literature: ⚠️ KNOWN RISK: Found 9 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Pantoprazole + Ranitidine
+      📖 Literature: ⚠️ KNOWN RISK: Found 15 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Famotidine + Ranitidine
+      📖 Literature: ⚠️ KNOWN RISK: Found 69 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.34).
+
+
+--------------------------------------------------
+👤 Examining: Kiara Verma (Age: 62)
+🏥 Dept: Gastroenterology | Diagnosis: IBS
+💊 Medications: Omeprazole, Clopidogrel, Spironolactone, Pregabalin
+--------------------------------------------------
+   Analysing pair: Omeprazole + Clopidogrel
+      📖 Literature: ⚠️ KNOWN RISK: Found 130 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Omeprazole + Spironolactone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Omeprazole + Pregabalin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.04).
+
+   Analysing pair: Clopidogrel + Spironolactone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Clopidogrel + Pregabalin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Spironolactone + Pregabalin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+
+--------------------------------------------------
+👤 Examining: Kavya Saxena (Age: 52)
+🏥 Dept: Orthopedics | Diagnosis: Lower Back Pain
+💊 Medications: Ibuprofen, Ondansetron, Spironolactone, Topiramate
+--------------------------------------------------
+   Analysing pair: Ibuprofen + Ondansetron
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Ibuprofen + Spironolactone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Ibuprofen + Topiramate
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.04).
+
+   Analysing pair: Ondansetron + Spironolactone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Ondansetron + Topiramate
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Spironolactone + Topiramate
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+
+--------------------------------------------------
+👤 Examining: Pari Kumar (Age: 85)
+🏥 Dept: Gastroenterology | Diagnosis: Peptic Ulcer
+💊 Medications: Ondansetron, Omeprazole, Gabapentin, Calcium/Vit D
+--------------------------------------------------
+   Analysing pair: Ondansetron + Omeprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Ondansetron + Gabapentin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.04).
+
+   Analysing pair: Ondansetron + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Omeprazole + Gabapentin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.03).
+
+   Analysing pair: Omeprazole + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Gabapentin + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+
+--------------------------------------------------
+👤 Examining: Kabir Das (Age: 46)
+🏥 Dept: Neurology | Diagnosis: Stroke
+💊 Medications: Carbamazepine, Atorvastatin, Ibuprofen, Lisinopril, Pioglitazone
+--------------------------------------------------
+   Analysing pair: Carbamazepine + Atorvastatin
+      📖 Literature: ⚠️ KNOWN RISK: Found 6 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Carbamazepine + Ibuprofen
+      📖 Literature: ⚠️ KNOWN RISK: Found 9 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Carbamazepine + Lisinopril
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Carbamazepine + Pioglitazone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Atorvastatin + Ibuprofen
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Atorvastatin + Lisinopril
+      📖 Literature: ⚠️ KNOWN RISK: Found 8 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Atorvastatin + Pioglitazone
+      📖 Literature: ⚠️ KNOWN RISK: Found 9 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Ibuprofen + Lisinopril
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Ibuprofen + Pioglitazone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Lisinopril + Pioglitazone
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+
+--------------------------------------------------
+👤 Examining: Ishaan Gaikwad (Age: 82)
+🏥 Dept: Orthopedics | Diagnosis: Osteoporosis
+💊 Medications: Naproxen, Sitagliptin, Tramadol, Pantoprazole, Omeprazole, Insulin
+--------------------------------------------------
+   Analysing pair: Naproxen + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Naproxen + Tramadol
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Naproxen + Pantoprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.19).
+
+   Analysing pair: Naproxen + Omeprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.22).
+
+   Analysing pair: Naproxen + Insulin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Sitagliptin + Tramadol
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Sitagliptin + Pantoprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Sitagliptin + Omeprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Sitagliptin + Insulin
+      📖 Literature: ⚠️ KNOWN RISK: Found 29 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Tramadol + Pantoprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Tramadol + Omeprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Tramadol + Insulin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Pantoprazole + Omeprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 113 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Pantoprazole + Insulin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Omeprazole + Insulin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+
+--------------------------------------------------
+👤 Examining: Sneha Sawant (Age: 34)
+🏥 Dept: Endocrinology | Diagnosis: PCOS
+💊 Medications: Glipizide, Metformin, Valproate, Loperamide, Sitagliptin, Meloxicam
+--------------------------------------------------
+   Analysing pair: Glipizide + Metformin
+      📖 Literature: ⚠️ KNOWN RISK: Found 15 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Glipizide + Valproate
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Glipizide + Loperamide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Glipizide + Sitagliptin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Glipizide + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.19).
+
+   Analysing pair: Metformin + Valproate
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Metformin + Loperamide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Metformin + Sitagliptin
+      📖 Literature: ⚠️ KNOWN RISK: Found 29 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.04).
+
+   Analysing pair: Metformin + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.05).
+
+   Analysing pair: Valproate + Loperamide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Valproate + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Valproate + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Loperamide + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Loperamide + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Sitagliptin + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+
+--------------------------------------------------
+👤 Examining: Krishna More (Age: 31)
+🏥 Dept: Gastroenterology | Diagnosis: IBS
+💊 Medications: Omeprazole, Pantoprazole, Pioglitazone, Aspirin
+--------------------------------------------------
+   Analysing pair: Omeprazole + Pantoprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 113 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Omeprazole + Pioglitazone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.19).
+
+   Analysing pair: Omeprazole + Aspirin
+      📖 Literature: ⚠️ KNOWN RISK: Found 53 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Pantoprazole + Pioglitazone
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Pantoprazole + Aspirin
+      📖 Literature: ⚠️ KNOWN RISK: Found 15 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.21).
+
+   Analysing pair: Pioglitazone + Aspirin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+
+--------------------------------------------------
+👤 Examining: Yash Sharma (Age: 45)
+🏥 Dept: Cardiology | Diagnosis: Arrhythmia
+💊 Medications: Lisinopril, Amlodipine, Meloxicam, Hydrochlorothiazide, Ibuprofen, Famotidine
+--------------------------------------------------
+   Analysing pair: Lisinopril + Amlodipine
+      📖 Literature: ⚠️ KNOWN RISK: Found 10 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Lisinopril + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.05).
+
+   Analysing pair: Lisinopril + Hydrochlorothiazide
+      📖 Literature: ⚠️ KNOWN RISK: Found 12 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Lisinopril + Ibuprofen
+      📖 Literature: ❌ API Error
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Lisinopril + Famotidine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.05).
+
+   Analysing pair: Amlodipine + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Amlodipine + Hydrochlorothiazide
+      📖 Literature: ⚠️ KNOWN RISK: Found 33 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.18).
+
+   Analysing pair: Amlodipine + Ibuprofen
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Amlodipine + Famotidine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Meloxicam + Hydrochlorothiazide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Meloxicam + Ibuprofen
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Meloxicam + Famotidine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Hydrochlorothiazide + Ibuprofen
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Hydrochlorothiazide + Famotidine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Ibuprofen + Famotidine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+
+--------------------------------------------------
+👤 Examining: Rahul Roy (Age: 55)
+🏥 Dept: Endocrinology | Diagnosis: Hypothyroidism
+💊 Medications: Levothyroxine, Omeprazole, Ondansetron, Digoxin, Hydrochlorothiazide, Furosemide
+--------------------------------------------------
+   Analysing pair: Levothyroxine + Omeprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 6 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Levothyroxine + Ondansetron
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Levothyroxine + Digoxin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Levothyroxine + Hydrochlorothiazide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Levothyroxine + Furosemide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Omeprazole + Ondansetron
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Omeprazole + Digoxin
+      📖 Literature: ⚠️ KNOWN RISK: Found 43 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Omeprazole + Hydrochlorothiazide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Omeprazole + Furosemide
+      📖 Literature: ⚠️ KNOWN RISK: Found 8 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Ondansetron + Digoxin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Ondansetron + Hydrochlorothiazide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Ondansetron + Furosemide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Digoxin + Hydrochlorothiazide
+      📖 Literature: ⚠️ KNOWN RISK: Found 13 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Digoxin + Furosemide
+      📖 Literature: ⚠️ KNOWN RISK: Found 40 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Hydrochlorothiazide + Furosemide
+      📖 Literature: ⚠️ KNOWN RISK: Found 38 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.36).
+
+
+--------------------------------------------------
+👤 Examining: Sumit Agarwal (Age: 35)
+🏥 Dept: Neurology | Diagnosis: Migraine
+💊 Medications: Levodopa, Ibuprofen, Diclofenac
+--------------------------------------------------
+   Analysing pair: Levodopa + Ibuprofen
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.33).
+
+   Analysing pair: Levodopa + Diclofenac
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Ibuprofen + Diclofenac
+      📖 Literature: ⚠️ KNOWN RISK: Found 83 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+
+--------------------------------------------------
+👤 Examining: Sumit Mehta (Age: 66)
+🏥 Dept: Neurology | Diagnosis: Neuropathy
+💊 Medications: Valproate, Levodopa, Hydrochlorothiazide
+--------------------------------------------------
+   Analysing pair: Valproate + Levodopa
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.19).
+
+   Analysing pair: Valproate + Hydrochlorothiazide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Levodopa + Hydrochlorothiazide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.20).
+
+
+--------------------------------------------------
+👤 Examining: Anil Das (Age: 55)
+🏥 Dept: Cardiology | Diagnosis: Heart Failure
+💊 Medications: Spironolactone, Pioglitazone, Hydrochlorothiazide, Levodopa
+--------------------------------------------------
+   Analysing pair: Spironolactone + Pioglitazone
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Spironolactone + Hydrochlorothiazide
+      📖 Literature: ⚠️ KNOWN RISK: Found 11 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.04).
+
+   Analysing pair: Spironolactone + Levodopa
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Pioglitazone + Hydrochlorothiazide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Pioglitazone + Levodopa
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Hydrochlorothiazide + Levodopa
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.20).
+
+
+--------------------------------------------------
+👤 Examining: Kabir Reddy (Age: 16)
+🏥 Dept: Pediatrics | Diagnosis: Allergy
+💊 Medications: Ibuprofen, Albuterol, Meloxicam, Sumatriptan, Tramadol
+--------------------------------------------------
+   Analysing pair: Ibuprofen + Albuterol
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.18).
+
+   Analysing pair: Ibuprofen + Meloxicam
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Ibuprofen + Sumatriptan
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Ibuprofen + Tramadol
+      📖 Literature: ⚠️ KNOWN RISK: Found 10 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Albuterol + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Albuterol + Sumatriptan
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Albuterol + Tramadol
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Meloxicam + Sumatriptan
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Meloxicam + Tramadol
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Sumatriptan + Tramadol
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+
+--------------------------------------------------
+👤 Examining: Myra More (Age: 87)
+🏥 Dept: Endocrinology | Diagnosis: Hyperthyroidism
+💊 Medications: Sitagliptin, Metformin, Spironolactone, Hydrochlorothiazide
+--------------------------------------------------
+   Analysing pair: Sitagliptin + Metformin
+      📖 Literature: ⚠️ KNOWN RISK: Found 29 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.04).
+
+   Analysing pair: Sitagliptin + Spironolactone
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Sitagliptin + Hydrochlorothiazide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Metformin + Spironolactone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.03).
+
+   Analysing pair: Metformin + Hydrochlorothiazide
+      📖 Literature: ⚠️ KNOWN RISK: Found 7 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Spironolactone + Hydrochlorothiazide
+      📖 Literature: ⚠️ KNOWN RISK: Found 11 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.04).
+
+
+--------------------------------------------------
+👤 Examining: Ishaan Verma (Age: 29)
+🏥 Dept: Endocrinology | Diagnosis: Type 2 Diabetes
+💊 Medications: Sitagliptin, Insulin, Valproate, Sumatriptan, Amlodipine
+--------------------------------------------------
+   Analysing pair: Sitagliptin + Insulin
+      📖 Literature: ⚠️ KNOWN RISK: Found 29 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Sitagliptin + Valproate
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Sitagliptin + Sumatriptan
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Sitagliptin + Amlodipine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Insulin + Valproate
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Insulin + Sumatriptan
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Insulin + Amlodipine
+      📖 Literature: ⚠️ KNOWN RISK: Found 7 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Valproate + Sumatriptan
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Valproate + Amlodipine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Sumatriptan + Amlodipine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+
+--------------------------------------------------
+👤 Examining: Sai Shah (Age: 77)
+🏥 Dept: Endocrinology | Diagnosis: Hyperthyroidism
+💊 Medications: Pioglitazone, Hydrochlorothiazide, Tramadol
+--------------------------------------------------
+   Analysing pair: Pioglitazone + Hydrochlorothiazide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Pioglitazone + Tramadol
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Hydrochlorothiazide + Tramadol
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+
+--------------------------------------------------
+👤 Examining: Shreya Saxena (Age: 8)
+🏥 Dept: Pediatrics | Diagnosis: Asthma
+💊 Medications: Paracetamol, Amoxicillin, Metformin, Furosemide, Lisinopril, Spironolactone
+--------------------------------------------------
+   Analysing pair: Paracetamol + Amoxicillin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Paracetamol + Metformin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Paracetamol + Furosemide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.18).
+
+   Analysing pair: Paracetamol + Lisinopril
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Paracetamol + Spironolactone
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Amoxicillin + Metformin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Amoxicillin + Furosemide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Amoxicillin + Lisinopril
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Amoxicillin + Spironolactone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Metformin + Furosemide
+      📖 Literature: ⚠️ KNOWN RISK: Found 17 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Metformin + Lisinopril
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Metformin + Spironolactone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.03).
+
+   Analysing pair: Furosemide + Lisinopril
+      📖 Literature: ⚠️ KNOWN RISK: Found 8 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Furosemide + Spironolactone
+      📖 Literature: ⚠️ KNOWN RISK: Found 24 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Lisinopril + Spironolactone
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+
+--------------------------------------------------
+👤 Examining: Anika Malhotra (Age: 1)
+🏥 Dept: Pediatrics | Diagnosis: Infection
+💊 Medications: Azithromycin, Paracetamol, Pregabalin, Metformin, Loperamide, Losartan
+--------------------------------------------------
+   Analysing pair: Azithromycin + Paracetamol
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.05).
+
+   Analysing pair: Azithromycin + Pregabalin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.04).
+
+   Analysing pair: Azithromycin + Metformin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Azithromycin + Loperamide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Azithromycin + Losartan
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.02).
+
+   Analysing pair: Paracetamol + Pregabalin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Paracetamol + Metformin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Paracetamol + Loperamide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Paracetamol + Losartan
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Pregabalin + Metformin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Pregabalin + Loperamide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Pregabalin + Losartan
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Metformin + Loperamide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Metformin + Losartan
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Loperamide + Losartan
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+
+--------------------------------------------------
+👤 Examining: Rani Desai (Age: 57)
+🏥 Dept: Endocrinology | Diagnosis: Type 2 Diabetes
+💊 Medications: Pioglitazone, Insulin, Loperamide, Aspirin, Ondansetron, Glipizide
+--------------------------------------------------
+   Analysing pair: Pioglitazone + Insulin
+      📖 Literature: ⚠️ KNOWN RISK: Found 50 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Pioglitazone + Loperamide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Pioglitazone + Aspirin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Pioglitazone + Ondansetron
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Pioglitazone + Glipizide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.22).
+
+   Analysing pair: Insulin + Loperamide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Insulin + Aspirin
+      📖 Literature: ⚠️ KNOWN RISK: Found 16 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Insulin + Ondansetron
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Insulin + Glipizide
+      📖 Literature: ⚠️ KNOWN RISK: Found 22 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Loperamide + Aspirin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.20).
+
+   Analysing pair: Loperamide + Ondansetron
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Loperamide + Glipizide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Aspirin + Ondansetron
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.20).
+
+   Analysing pair: Aspirin + Glipizide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Ondansetron + Glipizide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+
+--------------------------------------------------
+👤 Examining: Vivaan Bose (Age: 16)
+🏥 Dept: Pediatrics | Diagnosis: Asthma
+💊 Medications: Paracetamol, Cetirizine, Insulin
+--------------------------------------------------
+   Analysing pair: Paracetamol + Cetirizine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Paracetamol + Insulin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Cetirizine + Insulin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+
+--------------------------------------------------
+👤 Examining: Tanvi Singh (Age: 65)
+🏥 Dept: Neurology | Diagnosis: Parkinson's Disease
+💊 Medications: Levodopa, Valproate, Topiramate, Pregabalin, Diclofenac, Lisinopril
+--------------------------------------------------
+   Analysing pair: Levodopa + Valproate
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.19).
+
+   Analysing pair: Levodopa + Topiramate
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.05).
+
+   Analysing pair: Levodopa + Pregabalin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Levodopa + Diclofenac
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Levodopa + Lisinopril
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.19).
+
+   Analysing pair: Valproate + Topiramate
+      📖 Literature: ⚠️ KNOWN RISK: Found 99 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.04).
+
+   Analysing pair: Valproate + Pregabalin
+      📖 Literature: ⚠️ KNOWN RISK: Found 15 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.23).
+
+   Analysing pair: Valproate + Diclofenac
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Valproate + Lisinopril
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Topiramate + Pregabalin
+      📖 Literature: ⚠️ KNOWN RISK: Found 36 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Topiramate + Diclofenac
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.02).
+
+   Analysing pair: Topiramate + Lisinopril
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Pregabalin + Diclofenac
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Pregabalin + Lisinopril
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Diclofenac + Lisinopril
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+
+--------------------------------------------------
+👤 Examining: Aarav Kumar (Age: 40)
+🏥 Dept: Orthopedics | Diagnosis: Fracture
+💊 Medications: Calcium/Vit D, Ibuprofen, Diclofenac, Atorvastatin
+--------------------------------------------------
+   Analysing pair: Calcium/Vit D + Ibuprofen
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Calcium/Vit D + Diclofenac
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Calcium/Vit D + Atorvastatin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Ibuprofen + Diclofenac
+      📖 Literature: ⚠️ KNOWN RISK: Found 83 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Ibuprofen + Atorvastatin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Diclofenac + Atorvastatin
+      📖 Literature: ⚠️ KNOWN RISK: Found 7 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+
+--------------------------------------------------
+👤 Examining: Vihaan Pawar (Age: 63)
+🏥 Dept: Orthopedics | Diagnosis: Fracture
+💊 Medications: Calcium/Vit D, Valproate, Naproxen
+--------------------------------------------------
+   Analysing pair: Calcium/Vit D + Valproate
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Calcium/Vit D + Naproxen
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Valproate + Naproxen
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.18).
+
+
+--------------------------------------------------
+👤 Examining: Aarya Sharma (Age: 89)
+🏥 Dept: Endocrinology | Diagnosis: PCOS
+💊 Medications: Metformin, Omeprazole, Famotidine, Levothyroxine, Carvedilol
+--------------------------------------------------
+   Analysing pair: Metformin + Omeprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 9 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.05).
+
+   Analysing pair: Metformin + Famotidine
+      📖 Literature: ⚠️ KNOWN RISK: Found 6 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Metformin + Levothyroxine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Metformin + Carvedilol
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.08).
+
+   Analysing pair: Omeprazole + Famotidine
+      📖 Literature: ⚠️ KNOWN RISK: Found 26 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Omeprazole + Levothyroxine
+      📖 Literature: ⚠️ KNOWN RISK: Found 6 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Omeprazole + Carvedilol
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Famotidine + Levothyroxine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Famotidine + Carvedilol
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Levothyroxine + Carvedilol
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+
+--------------------------------------------------
+👤 Examining: Aadhya Bose (Age: 82)
+🏥 Dept: Orthopedics | Diagnosis: Lower Back Pain
+💊 Medications: Naproxen, Pregabalin, Omeprazole, Digoxin, Calcium/Vit D
+--------------------------------------------------
+   Analysing pair: Naproxen + Pregabalin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Naproxen + Omeprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 3 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.22).
+
+   Analysing pair: Naproxen + Digoxin
+      📖 Literature: ⚠️ KNOWN RISK: Found 6 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Naproxen + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Pregabalin + Omeprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.04).
+
+   Analysing pair: Pregabalin + Digoxin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Pregabalin + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Omeprazole + Digoxin
+      📖 Literature: ⚠️ KNOWN RISK: Found 43 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Omeprazole + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Digoxin + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+
+--------------------------------------------------
+👤 Examining: Pari Mehta (Age: 68)
+🏥 Dept: Neurology | Diagnosis: Neuropathy
+💊 Medications: Topiramate, Levodopa, Loperamide
+--------------------------------------------------
+   Analysing pair: Topiramate + Levodopa
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.05).
+
+   Analysing pair: Topiramate + Loperamide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Levodopa + Loperamide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+
+--------------------------------------------------
+👤 Examining: Saanvi Das (Age: 7)
+🏥 Dept: Pediatrics | Diagnosis: Asthma
+💊 Medications: Paracetamol, Ibuprofen, Levothyroxine, Carbamazepine, Glipizide
+--------------------------------------------------
+   Analysing pair: Paracetamol + Ibuprofen
+      📖 Literature: ⚠️ KNOWN RISK: Found 50 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.19).
+
+   Analysing pair: Paracetamol + Levothyroxine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Paracetamol + Carbamazepine
+      📖 Literature: ⚠️ KNOWN RISK: Found 10 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Paracetamol + Glipizide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Ibuprofen + Levothyroxine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.24).
+
+   Analysing pair: Ibuprofen + Carbamazepine
+      📖 Literature: ⚠️ KNOWN RISK: Found 9 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Ibuprofen + Glipizide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Levothyroxine + Carbamazepine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Levothyroxine + Glipizide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Carbamazepine + Glipizide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.19).
+
+
+--------------------------------------------------
+👤 Examining: Suresh Jadhav (Age: 37)
+🏥 Dept: Endocrinology | Diagnosis: Hypothyroidism
+💊 Medications: Pioglitazone, Sitagliptin, Valproate
+--------------------------------------------------
+   Analysing pair: Pioglitazone + Sitagliptin
+      📖 Literature: ⚠️ KNOWN RISK: Found 10 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Pioglitazone + Valproate
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Sitagliptin + Valproate
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+
+--------------------------------------------------
+👤 Examining: Kavya Verma (Age: 83)
+🏥 Dept: Endocrinology | Diagnosis: Hypothyroidism
+💊 Medications: Empagliflozin, Sitagliptin, Famotidine
+--------------------------------------------------
+   Analysing pair: Empagliflozin + Sitagliptin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Empagliflozin + Famotidine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Sitagliptin + Famotidine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+
+--------------------------------------------------
+👤 Examining: Nikhil Desai (Age: 65)
+🏥 Dept: Orthopedics | Diagnosis: Arthritis
+💊 Medications: Tramadol, Sumatriptan, Loperamide, Digoxin
+--------------------------------------------------
+   Analysing pair: Tramadol + Sumatriptan
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Tramadol + Loperamide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.26).
+
+   Analysing pair: Tramadol + Digoxin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Sumatriptan + Loperamide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Sumatriptan + Digoxin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Loperamide + Digoxin
+      📖 Literature: ⚠️ KNOWN RISK: Found 6 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+
+--------------------------------------------------
+👤 Examining: Nikhil Pawar (Age: 8)
+🏥 Dept: Pediatrics | Diagnosis: Infection
+💊 Medications: Amoxicillin, Cetirizine, Insulin, Amlodipine, Empagliflozin, Ondansetron
+--------------------------------------------------
+   Analysing pair: Amoxicillin + Cetirizine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Amoxicillin + Insulin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Amoxicillin + Amlodipine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Amoxicillin + Empagliflozin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+   Analysing pair: Amoxicillin + Ondansetron
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+   Analysing pair: Cetirizine + Insulin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Cetirizine + Amlodipine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.20).
+
+   Analysing pair: Cetirizine + Empagliflozin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Cetirizine + Ondansetron
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Insulin + Amlodipine
+      📖 Literature: ⚠️ KNOWN RISK: Found 7 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Insulin + Empagliflozin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Insulin + Ondansetron
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Amlodipine + Empagliflozin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Amlodipine + Ondansetron
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Empagliflozin + Ondansetron
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.06).
+
+
+--------------------------------------------------
+👤 Examining: Sneha Agarwal (Age: 51)
+🏥 Dept: Orthopedics | Diagnosis: Fracture
+💊 Medications: Naproxen, Sumatriptan, Calcium/Vit D, Sitagliptin
+--------------------------------------------------
+   Analysing pair: Naproxen + Sumatriptan
+      📖 Literature: ⚠️ KNOWN RISK: Found 8 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Naproxen + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Naproxen + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Sumatriptan + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Sumatriptan + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Calcium/Vit D + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+
+--------------------------------------------------
+👤 Examining: Gita Chopra (Age: 70)
+🏥 Dept: Endocrinology | Diagnosis: Hyperthyroidism
+💊 Medications: Levothyroxine, Ranitidine, Glipizide, Diclofenac, Insulin
+--------------------------------------------------
+   Analysing pair: Levothyroxine + Ranitidine
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Levothyroxine + Glipizide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Levothyroxine + Diclofenac
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Levothyroxine + Insulin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Ranitidine + Glipizide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+   Analysing pair: Ranitidine + Diclofenac
+      📖 Literature: ⚠️ KNOWN RISK: Found 7 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Ranitidine + Insulin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Glipizide + Diclofenac
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 2 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Glipizide + Insulin
+      📖 Literature: ⚠️ KNOWN RISK: Found 22 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Diclofenac + Insulin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 5 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+
+--------------------------------------------------
+👤 Examining: Myra Sen (Age: 77)
+🏥 Dept: Endocrinology | Diagnosis: PCOS
+💊 Medications: Insulin, Omeprazole, Pantoprazole
+--------------------------------------------------
+   Analysing pair: Insulin + Omeprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Insulin + Pantoprazole
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  🧬 Biological Agent (Structure Skipped)
+
+   Analysing pair: Omeprazole + Pantoprazole
+      📖 Literature: ⚠️ KNOWN RISK: Found 113 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.15).
+
+
+--------------------------------------------------
+👤 Examining: Rani Saxena (Age: 71)
+🏥 Dept: Orthopedics | Diagnosis: Lower Back Pain
+💊 Medications: Ibuprofen, Carbamazepine, Meloxicam, Sitagliptin, Diclofenac
+--------------------------------------------------
+   Analysing pair: Ibuprofen + Carbamazepine
+      📖 Literature: ⚠️ KNOWN RISK: Found 9 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Ibuprofen + Meloxicam
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Ibuprofen + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Ibuprofen + Diclofenac
+      📖 Literature: ⚠️ KNOWN RISK: Found 83 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.17).
+
+   Analysing pair: Carbamazepine + Meloxicam
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Carbamazepine + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Carbamazepine + Diclofenac
+      📖 Literature: ⚠️ KNOWN RISK: Found 13 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.18).
+
+   Analysing pair: Meloxicam + Sitagliptin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Meloxicam + Diclofenac
+      📖 Literature: ⚠️ KNOWN RISK: Found 14 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.16).
+
+   Analysing pair: Sitagliptin + Diclofenac
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+
+--------------------------------------------------
+👤 Examining: Vikram Agarwal (Age: 21)
+🏥 Dept: Gastroenterology | Diagnosis: Gastritis
+💊 Medications: Loperamide, Famotidine, Digoxin, Empagliflozin
+--------------------------------------------------
+   Analysing pair: Loperamide + Famotidine
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.11).
+
+   Analysing pair: Loperamide + Digoxin
+      📖 Literature: ⚠️ KNOWN RISK: Found 6 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Loperamide + Empagliflozin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.14).
+
+   Analysing pair: Famotidine + Digoxin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 4 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+   Analysing pair: Famotidine + Empagliflozin
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.09).
+
+   Analysing pair: Digoxin + Empagliflozin
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ⚪ Invalid chemical structure data
+
+
+--------------------------------------------------
+👤 Examining: Nikhil Mehta (Age: 23)
+🏥 Dept: Endocrinology | Diagnosis: Hyperthyroidism
+💊 Medications: Pioglitazone, Spironolactone, Pantoprazole, Calcium/Vit D
+--------------------------------------------------
+   Analysing pair: Pioglitazone + Spironolactone
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.10).
+
+   Analysing pair: Pioglitazone + Pantoprazole
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.13).
+
+   Analysing pair: Pioglitazone + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Spironolactone + Pantoprazole
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.07).
+
+   Analysing pair: Spironolactone + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+   Analysing pair: Pantoprazole + Calcium/Vit D
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ⚪ Data Unavailable (Complex/Missing structure)
+
+
+--------------------------------------------------
+👤 Examining: Anil Sharma (Age: 1)
+🏥 Dept: Pediatrics | Diagnosis: Asthma
+💊 Medications: Azithromycin, Amoxicillin, Glipizide
+--------------------------------------------------
+   Analysing pair: Azithromycin + Amoxicillin
+      📖 Literature: ⚠️ KNOWN RISK: Found 17 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.02).
+
+   Analysing pair: Azithromycin + Glipizide
+      📖 Literature: ✅ No obvious flag in literature.
+      🧪 Chemistry:  ✅ Low similarity (0.02).
+
+   Analysing pair: Amoxicillin + Glipizide
+      📖 Literature: ⚠️ POTENTIAL RISK: Found 1 citations.
+      🧪 Chemistry:  ✅ Low similarity (0.12).
+
+
