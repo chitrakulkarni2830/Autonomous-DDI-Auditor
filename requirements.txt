@@ -1,5 +1,5 @@
-requests==2.32.3
-rdkit==2024.03.5
-streamlit==1.54.0
-pandas==2.3.3
-plotly==6.5.2
+requests
+rdkit
+streamlit
+pandas
+plotly
