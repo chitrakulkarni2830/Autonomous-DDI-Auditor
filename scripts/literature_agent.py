@@ -1,5 +1,6 @@
 import requests
 import time
+import utils
 
 # ==========================================
 # LITERATURE AGENT
@@ -23,6 +24,12 @@ def check_drug_interaction(drug1, drug2):
         str: A status message ("Known Risk", "Potential Risk", or "No obvious flag")
     """
     
+    # Check cache first
+    lit_res, _ = utils.get_cached_result(drug1, drug2)
+    if lit_res:
+        print(f"[Literature Agent] Using cached result for {drug1} + {drug2}")
+        return lit_res
+
     # 1. Construct the search query
     # We look for: Drug1 AND Drug2 AND "Drug Interactions" matches in the title or abstract.
     query = f"{drug1}[Title/Abstract] AND {drug2}[Title/Abstract] AND Drug Interactions[MeSH]"
@@ -50,12 +57,15 @@ def check_drug_interaction(drug1, drug2):
                 # Many papers found -> High probability of known interaction
                 # SIMULATED LLM SUMMARY INTERVENTION
                 summary = generate_simulated_llm_summary(drug1, drug2)
-                return f"⚠️ KNOWN RISK ({count} citations) - 🤖 LLM Summary: {summary}"
+                result = f"⚠️ KNOWN RISK ({count} citations) - 🤖 LLM Summary: {summary}"
             elif count > 0:
                 # A few papers - might be rare or emerging
-                return f"⚠️ POTENTIAL RISK ({count} citations) - Needs review."
+                result = f"⚠️ POTENTIAL RISK ({count} citations) - Needs review."
             else:
-                return "✅ No obvious flag in literature."
+                result = "✅ No obvious flag in literature."
+            
+            utils.save_cached_result(drug1, drug2, result, None)
+            return result
         else:
             return "❌ API Error"
             

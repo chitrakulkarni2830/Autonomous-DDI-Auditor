@@ -1,0 +1,1514 @@
+{
+    "Insulin|Levodopa": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (1 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Loperamide|Pregabalin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Furosemide|Glipizide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.18)."
+    },
+    "Diclofenac|Metformin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Insulin|Lisinopril": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (7 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Ibuprofen|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.04)."
+    },
+    "Carbamazepine|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.18)."
+    },
+    "Aspirin|Digoxin": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (23 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Aspirin|Insulin": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (16 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Levothyroxine|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Albuterol|Amoxicillin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Omeprazole|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Naproxen|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Calcium/Vit D|Glipizide": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Amlodipine|Ibuprofen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Gabapentin|Glipizide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Clopidogrel|Empagliflozin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Amoxicillin|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Spironolactone|Sumatriptan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Naproxen|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Carvedilol|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Gabapentin|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Levothyroxine|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Meloxicam|Sumatriptan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Losartan|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Empagliflozin|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Atorvastatin|Paracetamol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.20)."
+    },
+    "Levothyroxine|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Levothyroxine|Loperamide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Carbamazepine|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Amoxicillin|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Carvedilol|Digoxin": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (14 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Losartan|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Atorvastatin|Ibuprofen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Amlodipine|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Loperamide|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Levothyroxine|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.20)."
+    },
+    "Ondansetron|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Azithromycin|Sumatriptan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.03)."
+    },
+    "Aspirin|Glipizide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.17)."
+    },
+    "Carbamazepine|Ibuprofen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Lisinopril|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Ibuprofen|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Furosemide|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Calcium/Vit D|Sitagliptin": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Levodopa|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Gabapentin|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Loperamide|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.26)."
+    },
+    "Calcium/Vit D|Carbamazepine": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Empagliflozin|Sumatriptan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Azithromycin|Levothyroxine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.03)."
+    },
+    "Insulin|Topiramate": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (2 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Calcium/Vit D|Ondansetron": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Omeprazole|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Carbamazepine|Metformin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Gabapentin|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.04)."
+    },
+    "Levodopa|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Pantoprazole|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Azithromycin|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.00)."
+    },
+    "Levodopa|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Clopidogrel|Levothyroxine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Glipizide|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Ibuprofen|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Carbamazepine|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Levodopa|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Empagliflozin|Levothyroxine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Metformin|Pregabalin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Lisinopril|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.03)."
+    },
+    "Pantoprazole|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Ibuprofen|Paracetamol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.19)."
+    },
+    "Diclofenac|Omeprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Carbamazepine|Carvedilol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Carvedilol|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.03)."
+    },
+    "Empagliflozin|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Carbamazepine|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Clopidogrel|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Metformin|Sumatriptan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Calcium/Vit D|Famotidine": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Levodopa|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.19)."
+    },
+    "Albuterol|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.20)."
+    },
+    "Empagliflozin|Lisinopril": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.06)."
+    },
+    "Aspirin|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Gabapentin|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.03)."
+    },
+    "Omeprazole|Pioglitazone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.19)."
+    },
+    "Ibuprofen|Insulin": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (2 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Aspirin|Carbamazepine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.21)."
+    },
+    "Lisinopril|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Losartan|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Azithromycin|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Digoxin|Levodopa": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (5 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Meloxicam|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Aspirin|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.20)."
+    },
+    "Naproxen|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Insulin|Sitagliptin": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (29 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Digoxin|Lisinopril": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (16 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Levothyroxine|Pregabalin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.17)."
+    },
+    "Albuterol|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Levothyroxine|Pioglitazone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Glipizide|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Spironolactone|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Calcium/Vit D|Insulin": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Levothyroxine|Sumatriptan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Famotidine|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Gabapentin|Ibuprofen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Digoxin|Insulin": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (18 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Furosemide|Metformin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Pantoprazole|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Meloxicam|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.03)."
+    },
+    "Empagliflozin|Loperamide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Amoxicillin|Digoxin": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (2 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Losartan|Pregabalin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.06)."
+    },
+    "Famotidine|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Ibuprofen|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Carvedilol|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Atorvastatin|Azithromycin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.04)."
+    },
+    "Diclofenac|Ibuprofen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.17)."
+    },
+    "Glipizide|Ibuprofen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Levodopa|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Carbamazepine|Empagliflozin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Aspirin|Famotidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Losartan|Sumatriptan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Meloxicam|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Diclofenac|Hydrochlorothiazide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.19)."
+    },
+    "Insulin|Losartan": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (16 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Azithromycin|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.03)."
+    },
+    "Hydrochlorothiazide|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Calcium/Vit D|Meloxicam": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Gabapentin|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Albuterol|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Carbamazepine|Furosemide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Diclofenac|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Levothyroxine|Lisinopril": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.18)."
+    },
+    "Pantoprazole|Pregabalin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.04)."
+    },
+    "Glipizide|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Insulin|Paracetamol": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (3 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Albuterol|Clopidogrel": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Pantoprazole|Pioglitazone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Gabapentin|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Azithromycin|Gabapentin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.00)."
+    },
+    "Empagliflozin|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.06)."
+    },
+    "Diclofenac|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Glipizide|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.19)."
+    },
+    "Carvedilol|Famotidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Hydrochlorothiazide|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.04)."
+    },
+    "Levodopa|Sumatriptan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Amoxicillin|Carvedilol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Albuterol|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.03)."
+    },
+    "Clopidogrel|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Amlodipine|Hydrochlorothiazide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.18)."
+    },
+    "Meloxicam|Pioglitazone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Digoxin|Topiramate": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (2 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Losartan|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Glipizide|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Diclofenac|Loperamide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.21)."
+    },
+    "Amlodipine|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Ranitidine|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Ondansetron|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Hydrochlorothiazide|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Albuterol|Aspirin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Diclofenac|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Levodopa|Levothyroxine": {
+        "lit_status": null,
+        "chem_status": "\u26a0\ufe0f HIGH STRUCTURAL SIMILARITY (0.40). Possible metabolic competition."
+    },
+    "Lisinopril|Sumatriptan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Atorvastatin|Hydrochlorothiazide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Carbamazepine|Levothyroxine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Clopidogrel|Pioglitazone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Sitagliptin|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Amlodipine|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Amlodipine|Loperamide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.20)."
+    },
+    "Famotidine|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.34)."
+    },
+    "Famotidine|Gabapentin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Levodopa|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.22)."
+    },
+    "Carbamazepine|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Atorvastatin|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Carbamazepine|Hydrochlorothiazide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.19)."
+    },
+    "Meloxicam|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Losartan|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Sitagliptin|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Levothyroxine|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Diclofenac|Empagliflozin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Amlodipine|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Carvedilol|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Carbamazepine|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Digoxin|Ondansetron": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (2 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Amoxicillin|Azithromycin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.02)."
+    },
+    "Amlodipine|Clopidogrel": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.26)."
+    },
+    "Azithromycin|Famotidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Calcium/Vit D|Omeprazole": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Atorvastatin|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Amoxicillin|Carbamazepine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Diclofenac|Gabapentin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Diclofenac|Furosemide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.17)."
+    },
+    "Clopidogrel|Famotidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Clopidogrel|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Azithromycin|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.03)."
+    },
+    "Levodopa|Loperamide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Naproxen|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.19)."
+    },
+    "Famotidine|Pioglitazone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Carbamazepine|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Losartan|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.01)."
+    },
+    "Empagliflozin|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Clopidogrel|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.17)."
+    },
+    "Metformin|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.02)."
+    },
+    "Carbamazepine|Loperamide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Amlodipine|Empagliflozin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Topiramate|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Omeprazole|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Amlodipine|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Lisinopril|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Carbamazepine|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Tramadol|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Pantoprazole|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.04)."
+    },
+    "Amoxicillin|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Lisinopril|Loperamide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Albuterol|Digoxin": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Albuterol|Insulin": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (2 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Ibuprofen|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Levodopa|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Digoxin|Ibuprofen": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (10 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Topiramate|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.04)."
+    },
+    "Paracetamol|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Famotidine|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Hydrochlorothiazide|Levothyroxine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Lisinopril|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Gabapentin|Hydrochlorothiazide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Carbamazepine|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.06)."
+    },
+    "Amlodipine|Pregabalin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Losartan|Pioglitazone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Metformin|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Ibuprofen|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Glipizide|Levothyroxine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Hydrochlorothiazide|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.20)."
+    },
+    "Atorvastatin|Gabapentin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Losartan|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Gabapentin|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.02)."
+    },
+    "Azithromycin|Glipizide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.02)."
+    },
+    "Diclofenac|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.17)."
+    },
+    "Ibuprofen|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Glipizide|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Ibuprofen|Loperamide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Hydrochlorothiazide|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Carbamazepine|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Levothyroxine|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Glipizide|Hydrochlorothiazide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.24)."
+    },
+    "Loperamide|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Carbamazepine|Gabapentin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Diclofenac|Lisinopril": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Lisinopril|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Diclofenac|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Glipizide|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Clopidogrel|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Ibuprofen|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.24)."
+    },
+    "Calcium/Vit D|Spironolactone": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Naproxen|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Amlodipine|Levothyroxine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Gabapentin|Loperamide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Ondansetron|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Digoxin|Spironolactone": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (43 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Aspirin|Hydrochlorothiazide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Meloxicam|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Amlodipine|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Levodopa|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Glipizide|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Calcium/Vit D|Valproate": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Gabapentin|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.18)."
+    },
+    "Amlodipine|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Ondansetron|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Calcium/Vit D|Clopidogrel": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Meloxicam|Omeprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Insulin|Pantoprazole": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (1 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Loperamide|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Azithromycin|Carbamazepine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.00)."
+    },
+    "Glipizide|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Lisinopril|Pioglitazone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Levothyroxine|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Azithromycin|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.03)."
+    },
+    "Clopidogrel|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Pantoprazole|Paracetamol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.18)."
+    },
+    "Levodopa|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Diclofenac|Glipizide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.17)."
+    },
+    "Sumatriptan|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.06)."
+    },
+    "Atorvastatin|Lisinopril": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Carbamazepine|Diclofenac": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.18)."
+    },
+    "Levodopa|Paracetamol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.21)."
+    },
+    "Pregabalin|Sumatriptan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Insulin|Spironolactone": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (3 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Paracetamol|Pregabalin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Carbamazepine|Famotidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Clopidogrel|Omeprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Gabapentin|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Diclofenac|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.02)."
+    },
+    "Calcium/Vit D|Gabapentin": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Glipizide|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.08)."
+    },
+    "Atorvastatin|Digoxin": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (34 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Atorvastatin|Insulin": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (15 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Calcium/Vit D|Furosemide": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Carbamazepine|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Loperamide|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Ibuprofen|Pregabalin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.24)."
+    },
+    "Insulin|Valproate": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (3 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Azithromycin|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.02)."
+    },
+    "Ranitidine|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Sumatriptan|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Aspirin|Calcium/Vit D": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Ibuprofen|Sumatriptan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.17)."
+    },
+    "Amlodipine|Glipizide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.22)."
+    },
+    "Loperamide|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Clopidogrel|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Ondansetron|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Famotidine|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Sitagliptin|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Amlodipine|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Azithromycin|Ibuprofen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.04)."
+    },
+    "Famotidine|Omeprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Loperamide|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Carvedilol|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Calcium/Vit D|Sumatriptan": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Hydrochlorothiazide|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Sumatriptan|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Spironolactone|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Albuterol|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Ibuprofen|Levothyroxine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.24)."
+    },
+    "Diclofenac|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Clopidogrel|Ibuprofen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Amlodipine|Aspirin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.19)."
+    },
+    "Ibuprofen|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.33)."
+    },
+    "Albuterol|Paracetamol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.18)."
+    },
+    "Atorvastatin|Glipizide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    },
+    "Empagliflozin|Ibuprofen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Diclofenac|Ondansetron": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Ibuprofen|Lisinopril": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Meloxicam|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.09)."
+    },
+    "Ibuprofen|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u26a0\ufe0f HIGH STRUCTURAL SIMILARITY (0.42). Possible metabolic competition."
+    },
+    "Calcium/Vit D|Levothyroxine": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Albuterol|Ibuprofen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.18)."
+    },
+    "Famotidine|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Atorvastatin|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.02)."
+    },
+    "Calcium/Vit D|Diclofenac": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Carbamazepine|Glipizide": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.19)."
+    },
+    "Spironolactone|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Furosemide|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Calcium/Vit D|Levodopa": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Gabapentin|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.16)."
+    },
+    "Losartan|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.20)."
+    },
+    "Amlodipine|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Calcium/Vit D|Lisinopril": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Albuterol|Amlodipine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Carvedilol|Ranitidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Amlodipine|Carbamazepine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.20)."
+    },
+    "Calcium/Vit D|Naproxen": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Carvedilol|Gabapentin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.03)."
+    },
+    "Clopidogrel|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.14)."
+    },
+    "Gabapentin|Naproxen": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.10)."
+    },
+    "Azithromycin|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.02)."
+    },
+    "Insulin|Pregabalin": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Pioglitazone|Tramadol": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Amoxicillin|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Diclofenac|Famotidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Diclofenac|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Digoxin|Pantoprazole": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (10 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Empagliflozin|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.05)."
+    },
+    "Insulin|Sumatriptan": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Clopidogrel|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.12)."
+    },
+    "Albuterol|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.13)."
+    },
+    "Hydrochlorothiazide|Insulin": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (8 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Aspirin|Levothyroxine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.17)."
+    },
+    "Pregabalin|Topiramate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.06)."
+    },
+    "Albuterol|Spironolactone": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Aspirin|Diclofenac": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.20)."
+    },
+    "Diclofenac|Insulin": {
+        "lit_status": "\u26a0\ufe0f POTENTIAL RISK (5 citations) - Needs review.",
+        "chem_status": null
+    },
+    "Levodopa|Sitagliptin": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.20)."
+    },
+    "Glipizide|Insulin": {
+        "lit_status": "\u26a0\ufe0f KNOWN RISK (22 citations) - \ud83e\udd16 LLM Summary: Increased risk of adverse pharmacological synergy. Monitor patient for combined side-effect profile.",
+        "chem_status": null
+    },
+    "Aspirin|Levodopa": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.19)."
+    },
+    "Insulin|Levothyroxine": {
+        "lit_status": "\u2705 No obvious flag in literature.",
+        "chem_status": null
+    },
+    "Amlodipine|Famotidine": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.11)."
+    },
+    "Amlodipine|Losartan": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.17)."
+    },
+    "Famotidine|Meloxicam": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.07)."
+    },
+    "Empagliflozin|Valproate": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.06)."
+    },
+    "Omeprazole|Pantoprazole": {
+        "lit_status": null,
+        "chem_status": "\u2705 Low similarity (0.15)."
+    }
+}

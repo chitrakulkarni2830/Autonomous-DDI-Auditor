@@ -23,12 +23,19 @@ def load_data():
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         DB_PATH = os.path.join(BASE_DIR, "outputs", "audit_results.db")
         
+        if not os.path.exists(DB_PATH):
+            return pd.DataFrame()
+
         conn = sqlite3.connect(DB_PATH)
         # We need to loop through all tables and combine them for the dashboard
         cursor = conn.cursor()
         cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
         tables = [row[0] for row in cursor.fetchall() if row[0] != "sqlite_sequence"]
         
+        if not tables:
+            conn.close()
+            return pd.DataFrame()
+
         df_list = []
         for table in tables:
             query = f"SELECT *, '{table}' as Department FROM {table}"
@@ -39,7 +46,7 @@ def load_data():
         conn.close()
         return df
     except Exception as e:
-        st.error(f"Error loading database: {e}")
+        # Don't show technical error to user here, handled by df.empty check
         return pd.DataFrame()
 
 # Load the data

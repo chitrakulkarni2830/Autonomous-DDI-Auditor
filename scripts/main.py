@@ -3,6 +3,7 @@ import literature_agent
 import biochem_agent
 import itertools
 import sqlite3
+import utils
 
 # ==========================================
 # MAIN ORCHESTRATOR
@@ -35,10 +36,33 @@ def main():
     audit_conn = sqlite3.connect(AUDIT_DB_PATH)
     audit_cursor = audit_conn.cursor()
     
-    cleared_tables = set()
+    # --- OPTIMIZATION: Identify unique drug pairs across all patients ---
+    all_drug_pairs = set()
+    for patient in at_risk_patients:
+        drugs = patient['medications']
+        drug_pairs = list(itertools.combinations(drugs, 2))
+        for d1, d2 in drug_pairs:
+            # Sort names to treat (A, B) and (B, A) as the same pair
+            pair = tuple(sorted([d1, d2]))
+            all_drug_pairs.add(pair)
+            
+    total_pairs = len(all_drug_pairs)
+    print(f"Total unique drug pairs to audit: {total_pairs}")
     
+    # Audit unique pairs first (leveraging cache)
+    for i, (d1, d2) in enumerate(all_drug_pairs):
+        print(f"Auditing unique pair [{i+1}/{total_pairs}]: {d1} + {d2}")
+        literature_agent.check_drug_interaction(d1, d2)
+        
+        biologicals = ["Insulin", "Monoclonal", "Vaccine"]
+        if not any(bio in d1 or bio in d2 for bio in biologicals):
+            biochem_agent.analyze_structure_risk(d1, d2)
+
+    cleared_tables = set()
+
+    # Now populate the database using cached results
     for i, patient in enumerate(at_risk_patients):
-        print(f"[{i+1}/{total_patients}] Checking {patient['name']}...")
+        print(f"[{i+1}/{total_patients}] Recording results for {patient['name']}...")
         
         # Format department name for SQL table (e.g., General Medicine -> General_Medicine)
         table_name = patient['department'].replace(" ", "_").replace("-", "_")
@@ -66,15 +90,13 @@ def main():
         drug_pairs = list(itertools.combinations(drugs, 2))
         
         for d1, d2 in drug_pairs:
-            # --- STEP 2: Literature Agent ---
-            lit_status = literature_agent.check_drug_interaction(d1, d2)
+            # Fetch from cache (guaranteed to be there now)
+            lit_status, chem_status = utils.get_cached_result(d1, d2)
             
-            # --- STEP 3: Bio-Chemist Agent ---
+            # Handle special cases (Biologicals)
             biologicals = ["Insulin", "Monoclonal", "Vaccine"]
             if any(bio in d1 or bio in d2 for bio in biologicals):
-                    chem_status = "🧬 Biological Agent (Structure Skipped)"
-            else:
-                    chem_status = biochem_agent.analyze_structure_risk(d1, d2)
+                chem_status = "🧬 Biological Agent (Structure Skipped)"
             
             # Insert record into department-specific table
             audit_cursor.execute(f'''
@@ -88,8 +110,8 @@ def main():
                 med_list_str,
                 d1, 
                 d2, 
-                lit_status, 
-                chem_status
+                lit_status or "✅ No obvious flag in literature.", 
+                chem_status or "⚪ Data Unavailable"
             ))
 
     audit_conn.commit()

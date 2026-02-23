@@ -2,6 +2,7 @@ from rdkit import Chem
 from rdkit.Chem import DataStructs
 from rdkit.Chem import AllChem
 from rdkit import RDLogger
+import utils
 
 # Suppress RDKit warnings/logs to keep output clean
 RDLogger.DisableLog('rdApp.*')
@@ -75,6 +76,12 @@ def analyze_structure_risk(drug1_name, drug2_name):
     Calculates the Tanimoto Similarity between two drugs.
     """
     
+    # Check cache first
+    _, chem_res = utils.get_cached_result(drug1_name, drug2_name)
+    if chem_res:
+        print(f"[Bio-Chemist Agent] Using cached result for {drug1_name} + {drug2_name}")
+        return chem_res
+
     # 1. Get SMILES strings
     smi1 = DRUG_SMILES.get(drug1_name)
     smi2 = DRUG_SMILES.get(drug2_name)
@@ -101,9 +108,12 @@ def analyze_structure_risk(drug1_name, drug2_name):
         
         # 5. Evaluate Risk
         if similarity > 0.4:
-            return f"⚠️ HIGH STRUCTURAL SIMILARITY ({similarity:.2f}). Possible metabolic competition."
+            result = f"⚠️ HIGH STRUCTURAL SIMILARITY ({similarity:.2f}). Possible metabolic competition."
         else:
-            return f"✅ Low similarity ({similarity:.2f})."
+            result = f"✅ Low similarity ({similarity:.2f})."
+            
+        utils.save_cached_result(drug1_name, drug2_name, None, result)
+        return result
             
     except Exception as e:
         return f"Error in chemical analysis: {e}"
