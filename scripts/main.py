@@ -27,8 +27,12 @@ def main():
     total_patients = len(at_risk_patients)
     print(f"\nProcessing all {total_patients} patients. Saving results to 'audit_results.db'...\n")
     
-    # Connect to Audit Database (Creates it if it doesn't exist)
-    audit_conn = sqlite3.connect("audit_results.db")
+    # Connect to Audit Database (Creates it if it doesn't exist) in 'outputs/'
+    import os
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    AUDIT_DB_PATH = os.path.join(BASE_DIR, "outputs", "audit_results.db")
+    
+    audit_conn = sqlite3.connect(AUDIT_DB_PATH)
     audit_cursor = audit_conn.cursor()
     
     cleared_tables = set()

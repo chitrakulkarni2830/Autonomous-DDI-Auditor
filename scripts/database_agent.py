@@ -7,6 +7,8 @@ import sqlite3
 # Polypharmacy here is defined as taking 3 or more medications.
 # ==========================================
 
+import os
+
 def get_at_risk_patients():
     """
     Connects to the database and runs a SQL query to find
@@ -18,8 +20,12 @@ def get_at_risk_patients():
     
     print("[Database Agent] Connecting to patient records...")
     
+    # Define path to the database in 'outputs' folder
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    DB_PATH = os.path.join(BASE_DIR, "outputs", "patients.db")
+    
     # 1. Connect to the database
-    conn = sqlite3.connect("patients.db")
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
     # 2. SQL Query

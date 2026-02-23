@@ -11,18 +11,20 @@ import datetime
 # ==========================================
 
 def export_high_risk_patients():
-    print("Connecting to audit results database...")
+    import os
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    INPUT_DB = os.path.join(BASE_DIR, "outputs", "audit_results.db")
+    OUTPUT_DB = os.path.join(BASE_DIR, "outputs", "high_risk_patients.db")
     
     try:
-        conn = sqlite3.connect("audit_results.db")
+        conn = sqlite3.connect(INPUT_DB)
         cursor = conn.cursor()
         # Get all tables in the database
         cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
         tables = [row[0] for row in cursor.fetchall() if row[0] != "sqlite_sequence"]
         
-        output_db = "high_risk_patients.db"
-        print(f"Connecting to output database '{output_db}'...")
-        hr_conn = sqlite3.connect(output_db)
+        print(f"Connecting to output database '{OUTPUT_DB}'...")
+        hr_conn = sqlite3.connect(OUTPUT_DB)
         hr_cursor = hr_conn.cursor()
         
         total_high_risk = 0
@@ -83,7 +85,7 @@ def export_high_risk_patients():
         if total_high_risk == 0:
             print("No high-risk patients found in any department. Awesome!")
         else:
-            print(f"\nSuccessfully generated {output_db} with data separated by department tables.")
+            print(f"\nSuccessfully generated {OUTPUT_DB} with data separated by department tables.")
             print(f"Total High-Risk Interactions Found: {total_high_risk}")
                 
     except sqlite3.Error as e:

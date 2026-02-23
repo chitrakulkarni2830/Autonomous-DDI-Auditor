@@ -50,11 +50,17 @@ department_data = {
 
 department_list = list(department_data.keys())
 
+import os
+
 # ==========================================
 # PART 2: DATABASE SETUP
 # ==========================================
 
-conn = sqlite3.connect("patients.db")
+# Move up one level to project root, then into 'outputs'
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_PATH = os.path.join(BASE_DIR, "outputs", "patients.db")
+
+conn = sqlite3.connect(DB_PATH)
 cursor = conn.cursor()
 
 print("Creating database tables...")

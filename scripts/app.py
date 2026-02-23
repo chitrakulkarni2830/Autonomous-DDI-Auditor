@@ -19,7 +19,11 @@ st.markdown("---")
 @st.cache_data
 def load_data():
     try:
-        conn = sqlite3.connect("audit_results.db")
+        import os
+        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        DB_PATH = os.path.join(BASE_DIR, "outputs", "audit_results.db")
+        
+        conn = sqlite3.connect(DB_PATH)
         # We need to loop through all tables and combine them for the dashboard
         cursor = conn.cursor()
         cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")

@@ -1,6 +1,6 @@
 # 🏥 Autonomous Drug-Drug Interaction (DDI) Auditor
 
-![Dashboard Screenshot](./dashboard_screenshot.png)
+![Dashboard Screenshot](./assets/dashboard_screenshot.png)
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-lightgrey.svg)
@@ -19,8 +19,8 @@ This project demonstrates advanced skills in **Data Engineering, API Integration
 2. **LLM-Simulated Summaries**: The Literature Agent synthesizes PubMed citation counts into readable clinical risk summaries.
 3. **Cheminformatics**: Uses Tanimoto Similarity indexing to predict risks when literature is unavailable.
 4. **Dynamic Data Routing**: Automatically generates SQLite databases (`audit_results.db`, `high_risk_patients.db`) partitioned by medical department.
-5. **Advanced SQL Sandbox**: Includes 10 complex queries (`advanced_queries.sql`) featuring CTEs, Window Functions, and advanced joins.
-6. **Interactive Dashboard**: A clean, modern Streamlit UI (`app.py`) for visual data exploration.
+5. **Advanced SQL Sandbox**: Includes 10 complex queries (`outputs/advanced_queries.sql`) featuring CTEs, Window Functions, and advanced joins.
+6. **Interactive Dashboard**: A clean, modern Streamlit UI (`scripts/app.py`) for visual data exploration.
 
 ---
 
@@ -46,38 +46,38 @@ pip install -r requirements.txt
 ### 3. Generate the Patient Data
 First, we need to generate our synthetic hospital database.
 ```bash
-python database_setup.py
+python3 scripts/database_setup.py
 ```
-*(This creates `patients.db` with 100 patients across 6 departments).*
+*(This creates `outputs/patients.db` with 100 patients across 6 departments).*
 
 ### 4. Run the AI Audit
 Unleash the agents on the database. Grab a coffee, as it makes real-time API calls to the NIH/PubMed!
 ```bash
-python main.py
+python3 scripts/main.py
 ```
-*(This creates `audit_results.db`, splitting the findings into department tables).*
+*(This creates `outputs/audit_results.db`, splitting the findings into department tables).*
 
 ### 5. Extract High-Risk Patients
 Route the most critical alerts into their own priority database.
 ```bash
-python export_high_risk.py
+python3 scripts/export_high_risk.py
 ```
 
 ### 6. Launch the Dashboard
 Visualize the findings in your browser:
 ```bash
-streamlit run app.py
+streamlit run scripts/app.py
 ```
 
 ---
 
 ## 🗄️ Database Structure & SQL
 The system generates several distinct SQLite databases:
-*   `patients.db`: The raw, synthetic hospital data.
-*   `audit_results.db`: The complete output of the AI agents. Contains individual tables for `Cardiology`, `Neurology`, etc.
-*   `high_risk_patients.db`: Filtered alerts containing "Known Risks" and "High Structural Similarity".
+*   `outputs/patients.db`: The raw, synthetic hospital data.
+*   `outputs/audit_results.db`: The complete output of the AI agents. Contains individual tables for `Cardiology`, `Neurology`, etc.
+*   `outputs/high_risk_patients.db`: Filtered alerts containing "Known Risks" and "High Structural Similarity".
 
-Check out `advanced_queries.sql` to see how to manipulate these databases using CTEs and advanced aggregations!
+Check out `outputs/advanced_queries.sql` to see how to manipulate these databases using CTEs and advanced aggregations!
 
 ---
 
