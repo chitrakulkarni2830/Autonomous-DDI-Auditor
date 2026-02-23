@@ -10,7 +10,7 @@ if [ ! -d "venv" ]; then
     exit 1
 fi
 
-echo "🚀 Starting Autonomous DDI Auditor..."
+echo "🚀 Starting Autonomous DDI Auditor (Python Desktop App)..."
 
-# Run the Streamlit app using the venv python
-./venv/bin/python3 -m streamlit run scripts/app.py
+# Run the Python GUI app using the venv python
+./venv/bin/python3 scripts/gui_app.py
