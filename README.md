@@ -4,13 +4,13 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-lightgrey.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red.svg)
+![CustomTkinter](https://img.shields.io/badge/CustomTkinter-Native_GUI-blue.svg)
 ![RDKit](https://img.shields.io/badge/RDKit-Cheminformatics-green.svg)
 
 ## 📖 Overview
 The Autonomous DDI Auditor is an intelligent, multi-agent Python system designed to identify dangerous medication combinations (polypharmacy) in patient databases. It acts as a safety net, actively researching drug pairs using the **NCBI PubMed API** and analyzing their chemical structures using **RDKit**.
 
-This project demonstrates advanced skills in **Data Engineering, API Integration, Complex SQL, and Data Visualization**.
+This project demonstrates advanced skills in **Data Engineering, API Integration, Complex SQL, Software Optimization, and Native UI Development**.
 
 ---
 
@@ -18,16 +18,17 @@ This project demonstrates advanced skills in **Data Engineering, API Integration
 1. **Agentic Workflow**: Specialized agents (Database, Literature, Biochemist) hand off tasks to complete the audit.
 2. **LLM-Simulated Summaries**: The Literature Agent synthesizes PubMed citation counts into readable clinical risk summaries.
 3. **Cheminformatics**: Uses Tanimoto Similarity indexing to predict risks when literature is unavailable.
-4. **Dynamic Data Routing**: Automatically generates SQLite databases (`audit_results.db`, `high_risk_patients.db`) partitioned by medical department.
-5. **Advanced SQL Sandbox**: Includes 10 complex queries (`outputs/advanced_queries.sql`) featuring CTEs, Window Functions, and advanced joins.
-6. **Interactive Dashboard**: A clean, modern Streamlit UI (`scripts/app.py`) for visual data exploration.
+4. **Intelligent Caching Engine**: An optimized cache layer prevents redundant API calls and heavy biochemical computations, drastically reducing execution time.
+5. **Dynamic Data Routing**: Automatically generates SQLite databases (`audit_results.db`, `high_risk_patients.db`) partitioned by medical department.
+6. **Advanced SQL Sandbox**: Includes 10 complex queries (`outputs/advanced_queries.sql`) featuring CTEs, Window Functions, and advanced joins.
+7. **Premium Native Dashboard**: A high-fidelity, scrollable Python desktop application built with `CustomTkinter` and `Matplotlib` for visual data exploration.
 
 ---
 
 ## 🚀 How to Run the Project Local
 
 ### 1. Prerequisites
-You need Python installed. It is highly recommended to use a virtual environment.
+You need Python installed. It is highly recommended to use a virtual environment with Tkinter support (built-in on most Mac/Windows systems).
 
 ```bash
 # Create a virtual environment
@@ -41,7 +42,6 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-*(Note: If `requirements.txt` is not present, install manually: `pip install rdkit requests streamlit pandas plotly`)*
 
 ### 3. Generate the Patient Data
 First, we need to generate our synthetic hospital database.
@@ -64,9 +64,10 @@ python3 scripts/export_high_risk.py
 ```
 
 ### 6. Launch the Dashboard
-Visualize the findings in your browser:
+Visualize the findings in your premium native desktop app:
 ```bash
-streamlit run scripts/app.py
+# Double-click the macOS launcher OR run manually:
+python3 scripts/gui_app.py
 ```
 
 ---
