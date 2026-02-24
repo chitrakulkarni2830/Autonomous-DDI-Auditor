@@ -52,11 +52,10 @@ class DDIAuditorGUI(ctk.CTk):
         self.dept_selector = ctk.CTkOptionMenu(self.sidebar, values=["All Departments"], command=self.apply_filters)
         self.dept_selector.pack(pady=(0, 15), padx=20, fill="x")
 
-        # Patient Search
-        ctk.CTkLabel(self.sidebar, text="Search Patient", font=ctk.CTkFont(size=11)).pack(anchor="w", padx=30)
-        self.patient_search = ctk.CTkEntry(self.sidebar, placeholder_text="Type name...")
-        self.patient_search.pack(pady=(0, 15), padx=20, fill="x")
-        self.patient_search.bind("<KeyRelease>", lambda e: self.apply_filters())
+        # Patient Selection
+        ctk.CTkLabel(self.sidebar, text="Select Patient", font=ctk.CTkFont(size=11)).pack(anchor="w", padx=30)
+        self.patient_selector = ctk.CTkOptionMenu(self.sidebar, values=["All Patients"], command=self.apply_filters)
+        self.patient_selector.pack(pady=(0, 15), padx=20, fill="x")
 
         # Drug Filter
         ctk.CTkLabel(self.sidebar, text="Filter by Drug", font=ctk.CTkFont(size=11)).pack(anchor="w", padx=30)
@@ -99,15 +98,21 @@ class DDIAuditorGUI(ctk.CTk):
             val.pack()
             self.metric_widgets[m] = val
 
-        # --- CHARTS SECTION ---
-        self.charts_row = ctk.CTkFrame(self.scrollable_container, fg_color="transparent")
-        self.charts_row.pack(fill="x", padx=20, pady=10)
+        # --- CHARTS SECTION (DEPARTMENT) ---
+        self.dept_chart_row = ctk.CTkFrame(self.scrollable_container, fg_color="transparent")
+        self.dept_chart_row.pack(fill="x", padx=20, pady=(10, 5))
         
-        self.dept_chart_frame = ctk.CTkFrame(self.charts_row, height=350, corner_radius=15)
-        self.dept_chart_frame.pack(side="left", expand=True, padx=10, fill="both")
+        self.dept_chart_frame = ctk.CTkFrame(self.dept_chart_row, height=350, corner_radius=15)
+        self.dept_chart_frame.pack(fill="both", expand=True, padx=10)
         
-        self.drug_chart_frame = ctk.CTkFrame(self.charts_row, height=350, corner_radius=15)
-        self.drug_chart_frame.pack(side="left", expand=True, padx=10, fill="both")
+        # --- DEDICATED TOP CONTRIBUTORS SECTION ---
+        ctk.CTkLabel(self.scrollable_container, text="TOP DRUG CONTRIBUTORS", font=ctk.CTkFont(size=14, weight="bold")).pack(anchor="w", padx=30, pady=(20, 0))
+        
+        self.drug_chart_row = ctk.CTkFrame(self.scrollable_container, fg_color="transparent")
+        self.drug_chart_row.pack(fill="x", padx=20, pady=(5, 10))
+
+        self.drug_chart_frame = ctk.CTkFrame(self.drug_chart_row, height=350, corner_radius=15)
+        self.drug_chart_frame.pack(fill="both", expand=True, padx=10)
 
         # --- LOGS SECTION ---
         ctk.CTkLabel(self.scrollable_container, text="DETAILED AUDIT LOGS", font=ctk.CTkFont(size=14, weight="bold")).pack(anchor="w", padx=30, pady=(30, 10))
@@ -118,7 +123,7 @@ class DDIAuditorGUI(ctk.CTk):
         # Table Header
         header_f = ctk.CTkFrame(self.logs_table_frame, fg_color="#222", height=40)
         header_f.pack(fill="x", padx=5, pady=5)
-        cols = [("Patient", 150), ("Interaction", 250), ("Lit. Risk", 300), ("Biochem", 200)]
+        cols = [("Patient", 200), ("Interaction", 250), ("Lit. Risk", 300), ("Biochem", 200)]
         for text, width in cols:
             lbl = ctk.CTkLabel(header_f, text=text, font=ctk.CTkFont(weight="bold"), width=width, anchor="w")
             lbl.pack(side="left", padx=10)
@@ -150,9 +155,12 @@ class DDIAuditorGUI(ctk.CTk):
                 self.df['Is_High_Risk'] = self.df['literature_risk'].str.contains('KNOWN RISK', na=False) | \
                                          self.df['biochem_risk'].str.contains('HIGH STRUCTURAL SIMILARITY', na=False)
                 
-                # Update Department Selector
+                # Update Selectors
                 depts = ["All Departments"] + sorted(self.df['Department'].unique().tolist())
                 self.dept_selector.configure(values=depts)
+
+                patients = ["All Patients"] + sorted(self.df['patient_name'].unique().tolist())
+                self.patient_selector.configure(values=patients)
                 
                 self.apply_filters()
         except Exception as e:
@@ -169,9 +177,9 @@ class DDIAuditorGUI(ctk.CTk):
             filtered = filtered[filtered['Department'] == dept]
             
         # Patient Filter
-        p_search = self.patient_search.get().lower()
-        if p_search:
-            filtered = filtered[filtered['patient_name'].str.lower().contains(p_search, na=False)]
+        patient = self.patient_selector.get()
+        if patient != "All Patients":
+            filtered = filtered[filtered['patient_name'] == patient]
             
         # Drug Filter
         d_search = self.drug_search.get().lower()
@@ -210,8 +218,8 @@ class DDIAuditorGUI(ctk.CTk):
         for child in self.rows_container.winfo_children():
             child.destroy()
             
-        # Display limit for performance
-        display_df = self.filtered_df.head(50)
+        # Remove hard display limit so all filtered patients are visible
+        display_df = self.filtered_df
         
         for i, row in display_df.iterrows():
             f = ctk.CTkFrame(self.rows_container, fg_color="transparent" if i%2 == 0 else "#1a1a1a")
@@ -219,7 +227,7 @@ class DDIAuditorGUI(ctk.CTk):
             
             risk_color = "#ff4d4d" if row['Is_High_Risk'] else "gray"
             
-            ctk.CTkLabel(f, text=row['patient_name'], width=150, anchor="w", font=ctk.CTkFont(size=12)).pack(side="left", padx=10)
+            ctk.CTkLabel(f, text=row['patient_name'], width=200, anchor="w", font=ctk.CTkFont(size=12)).pack(side="left", padx=10)
             ctk.CTkLabel(f, text=f"{row['drug_1']} + {row['drug_2']}", width=250, anchor="w", text_color="#3b8ed0").pack(side="left", padx=10)
             
             lit_text = row['literature_risk'].split('-')[0] if '-' in row['literature_risk'] else row['literature_risk']
@@ -228,42 +236,65 @@ class DDIAuditorGUI(ctk.CTk):
             chem_text = row['biochem_risk'].split('(')[0] if '(' in row['biochem_risk'] else row['biochem_risk']
             ctk.CTkLabel(f, text=chem_text, width=200, anchor="w", text_color=risk_color).pack(side="left", padx=10)
 
-        if len(self.filtered_df) > 50:
-            ctk.CTkLabel(self.rows_container, text=f"... and {len(self.filtered_df)-50} more. Use filters to narrow down.", text_color="gray").pack(pady=10)
+
 
     def render_charts(self):
         # Dept Chart
         for w in self.dept_chart_frame.winfo_children(): w.destroy()
-        fig1, ax1 = plt.subplots(figsize=(4, 3), dpi=100)
+        # Increased width to match new full-width layout
+        fig1, ax1 = plt.subplots(figsize=(10, 3.5), dpi=100)
         plt.style.use('dark_background')
         
         risk_df = self.filtered_df[self.filtered_df['Is_High_Risk']]
         if not risk_df.empty:
-            risk_df.groupby("Department").size().plot(kind="barh", color="#1f538d", ax=ax1)
-            ax1.set_title("Risks by Dept", fontsize=10)
-            ax1.set_xlabel("")
+            risk_df.groupby("Department").size().sort_values(ascending=True).plot(kind="barh", color="#1f538d", ax=ax1)
+            
+            # Make the department names smaller so they fit
+            ax1.tick_params(axis='y', labelsize=6)
+            ax1.set_title("High Risks by Department", fontsize=12, pad=10)
+            ax1.set_xlabel("Count", fontsize=10)
             ax1.set_ylabel("")
-            plt.tight_layout()
+            
+            # Use tight layout with a pad to ensure labels aren't cut off
+            plt.tight_layout(pad=1.5)
+            # Force extra left margin in case tight_layout fails to account for very long names
+            fig1.subplots_adjust(left=0.25)
+            
             canvas1 = FigureCanvasTkAgg(fig1, master=self.dept_chart_frame)
             canvas1.get_tk_widget().pack(fill="both", expand=True, padx=10, pady=10)
             canvas1.draw()
         else:
             ctk.CTkLabel(self.dept_chart_frame, text="No Risk Data for Charts").pack(pady=100)
 
-        # Drug Chart
+        # Drug Chart (Dedicated Section)
         for w in self.drug_chart_frame.winfo_children(): w.destroy()
-        fig2, ax2 = plt.subplots(figsize=(4, 3), dpi=100)
+        # Full width figure, slightly taller to accommodate labels comfortably
+        fig2, ax2 = plt.subplots(figsize=(10, 4), dpi=100)
         if not risk_df.empty:
             drugs = pd.concat([risk_df['drug_1'], risk_df['drug_2']]).value_counts().head(5)
-            drugs.plot(kind="pie", autopct='%1.1f%%', ax=ax2, colors=['#1f538d', '#2874a6', '#2e86c1', '#3498db', '#5dade2'])
+            # Use horizontal bar chart instead of pie for better visibility
+            drugs.sort_values(ascending=True).plot(kind="barh", color="#e74c3c", ax=ax2)
+            
+            # Make the drug names smaller so they fit
+            ax2.tick_params(axis='y', labelsize=6)
+            ax2.set_xlabel("Involvement Count", fontsize=10)
             ax2.set_ylabel("")
-            ax2.set_title("Top Contributors", fontsize=10)
-            plt.tight_layout()
+            # Title is now handled by the UI label, so removing it from the plot to save space
+            ax2.set_title("")
+            
+            # Add value labels to the bars
+            for container in ax2.containers:
+                ax2.bar_label(container, padding=5, color='white', fontsize=9, weight='bold')
+
+            # Use tight layout with a pad to ensure labels aren't cut off
+            plt.tight_layout(pad=1.5)
+            # Force extra left margin in case tight_layout fails to account for very long names
+            fig2.subplots_adjust(left=0.25)
             canvas2 = FigureCanvasTkAgg(fig2, master=self.drug_chart_frame)
             canvas2.get_tk_widget().pack(fill="both", expand=True, padx=10, pady=10)
             canvas2.draw()
         else:
-            ctk.CTkLabel(self.drug_chart_frame, text="All Clear!").pack(pady=100)
+            ctk.CTkLabel(self.drug_chart_frame, text="All Clear! No High Risk Drugs Found.").pack(pady=100)
 
 if __name__ == "__main__":
     app = DDIAuditorGUI()
