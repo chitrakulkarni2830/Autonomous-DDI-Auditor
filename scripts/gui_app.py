@@ -1,22 +1,22 @@
 import tkinter as tk
+from tkinter import ttk
 import customtkinter as ctk
 import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import os
-import threading
 
-# Set appearance and theme
-ctk.set_appearance_mode("dark")
+# Set appearance and theme to match Streamlit light mode
+ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("blue")
 
 class DDIAuditorGUI(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("🏥 Autonomous DDI Auditor - Premium Dashboard")
-        self.geometry("1200x850")
+        self.title("🏥 Autonomous DDI Auditor - Safety Dashboard")
+        self.geometry("1400x900")
 
         # Configuration & State
         self.df = pd.DataFrame()
@@ -25,115 +25,170 @@ class DDIAuditorGUI(ctk.CTk):
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         self.db_path = os.path.join(BASE_DIR, "outputs", "audit_results.db")
 
-        # Layout Configuration
-        self.grid_columnconfigure(1, weight=1)
+        # Layout Configuration - Single Scrollable Main Area
+        self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(0, weight=1)
 
-        # Setup Components
-        self.setup_sidebar()
-        self.setup_main_area()
-        
+        # Setup Scrollable Main Area
+        self.main_container = ctk.CTkScrollableFrame(self, fg_color="white", corner_radius=0)
+        self.main_container.grid(row=0, column=0, sticky="nsew")
+
+        # UI Construction
+        self.setup_header()
+        self.setup_metrics()
+        self.setup_charts_area()
+        self.setup_table_area()
+
+        # Build style for Treeview
+        self.setup_treeview_style()
+
         # Initial Load
         self.load_full_data()
 
-    def setup_sidebar(self):
-        self.sidebar = ctk.CTkFrame(self, width=280, corner_radius=0)
-        self.sidebar.grid(row=0, column=0, sticky="nsew")
+    def setup_treeview_style(self):
+        style = ttk.Style()
+        style.theme_use("default")
         
-        # Brand
-        self.logo = ctk.CTkLabel(self.sidebar, text="🏥 DDI AUDITOR", font=ctk.CTkFont(size=22, weight="bold"))
-        self.logo.pack(pady=30, padx=20)
-
-        # Filters Label
-        ctk.CTkLabel(self.sidebar, text="FILTERS", font=ctk.CTkFont(size=12, weight="bold"), text_color="gray").pack(anchor="w", padx=30, pady=(10, 5))
-
-        # Department Filter
-        ctk.CTkLabel(self.sidebar, text="Department", font=ctk.CTkFont(size=11)).pack(anchor="w", padx=30)
-        self.dept_selector = ctk.CTkOptionMenu(self.sidebar, values=["All Departments"], command=self.apply_filters)
-        self.dept_selector.pack(pady=(0, 15), padx=20, fill="x")
-
-        # Patient Selection
-        ctk.CTkLabel(self.sidebar, text="Select Patient", font=ctk.CTkFont(size=11)).pack(anchor="w", padx=30)
-        self.patient_selector = ctk.CTkOptionMenu(self.sidebar, values=["All Patients"], command=self.apply_filters)
-        self.patient_selector.pack(pady=(0, 15), padx=20, fill="x")
-
-        # Drug Filter
-        ctk.CTkLabel(self.sidebar, text="Filter by Drug", font=ctk.CTkFont(size=11)).pack(anchor="w", padx=30)
-        self.drug_search = ctk.CTkEntry(self.sidebar, placeholder_text="e.g. Insulin")
-        self.drug_search.pack(pady=(0, 15), padx=20, fill="x")
-        self.drug_search.bind("<KeyRelease>", lambda e: self.apply_filters())
-
-        # Risk Filter
-        self.risk_only_var = tk.BooleanVar(value=False)
-        self.risk_checkbox = ctk.CTkCheckBox(self.sidebar, text="Show High Risk Only", variable=self.risk_only_var, command=self.apply_filters)
-        self.risk_checkbox.pack(pady=20, padx=30, anchor="w")
-
-        # Footer Actions
-        self.refresh_btn = ctk.CTkButton(self.sidebar, text="🔄 Reload Database", fg_color="transparent", border_width=1, command=self.load_full_data)
-        self.refresh_btn.pack(side="bottom", pady=20, padx=20, fill="x")
-
-    def setup_main_area(self):
-        self.scrollable_container = ctk.CTkScrollableFrame(self, corner_radius=0, fg_color="transparent")
-        self.scrollable_container.grid(row=0, column=1, sticky="nsew", padx=0, pady=0)
+        style.configure("Treeview", 
+                        background="#ffffff",
+                        foreground="#000000",
+                        rowheight=35,
+                        fieldbackground="#ffffff",
+                        bordercolor="#e0e0e0",
+                        borderwidth=1,
+                        font=("Helvetica", 11))
+                        
+        style.map('Treeview', background=[('selected', '#e6f2ff')])
         
-        # --- HEADER SECTION ---
-        self.header = ctk.CTkFrame(self.scrollable_container, fg_color="transparent")
-        self.header.pack(fill="x", padx=30, pady=(30, 10))
-        
-        self.title_lbl = ctk.CTkLabel(self.header, text="Safety Dashboard", font=ctk.CTkFont(size=28, weight="bold"))
-        self.title_lbl.pack(side="left")
+        style.configure("Treeview.Heading", 
+                        background="#f9f9f9",
+                        foreground="#555555",
+                        font=("Helvetica", 10, "bold"),
+                        bordercolor="#e0e0e0",
+                        borderwidth=1)
+                        
+        # Striped rows setup is handled in render_table
 
-        # --- METRICS SECTION ---
-        self.metrics_row = ctk.CTkFrame(self.scrollable_container, fg_color="transparent")
-        self.metrics_row.pack(fill="x", padx=20, pady=20)
+    def setup_header(self):
+        # Top Title
+        title_frame = ctk.CTkFrame(self.main_container, fg_color="transparent")
+        title_frame.pack(fill="x", padx=40, pady=(40, 20))
+        
+        ctk.CTkLabel(title_frame, text="🏥 Autonomous DDI Auditor - Safety Dashboard", 
+                     font=ctk.CTkFont(family="Helvetica", size=36, weight="bold"), 
+                     text_color="#31333f").pack(anchor="w")
+                     
+        # Horizontal Rule
+        ctk.CTkFrame(self.main_container, height=2, fg_color="#e6e6e8").pack(fill="x", padx=40, pady=(0, 20))
+
+    def setup_metrics(self):
+        # Section Title
+        ctk.CTkLabel(self.main_container, text="📊 Executive Summary", 
+                     font=ctk.CTkFont(family="Helvetica", size=24, weight="bold"), 
+                     text_color="#31333f").pack(anchor="w", padx=40, pady=(20, 10))
+        
+        metrics_frame = ctk.CTkFrame(self.main_container, fg_color="transparent")
+        metrics_frame.pack(fill="x", padx=40, pady=(10, 30))
         
         self.metric_widgets = {}
-        for m in ["Patients", "Audits", "Risk Alerts", "At Risk %"]:
-            card = ctk.CTkFrame(self.metrics_row, height=120, corner_radius=15, border_width=1, border_color="#333")
-            card.pack(side="left", expand=True, padx=10, fill="both")
-            card.pack_propagate(False)
+        metrics = ["Total Patients Audited", "Drug Pairs Checked", "High-Risk Interactions", "Patients at Risk"]
+        
+        for m in metrics:
+            card = ctk.CTkFrame(metrics_frame, fg_color="transparent")
+            card.pack(side="left", expand=True, fill="x")
             
-            ctk.CTkLabel(card, text=m.upper(), font=ctk.CTkFont(size=11, weight="bold"), text_color="gray").pack(pady=(20, 5))
-            val = ctk.CTkLabel(card, text="--", font=ctk.CTkFont(size=32, weight="bold"))
-            val.pack()
+            # Small label on top
+            ctk.CTkLabel(card, text=m, font=ctk.CTkFont(family="Helvetica", size=14), text_color="#555867").pack(anchor="w")
+            # Large number on bottom
+            val = ctk.CTkLabel(card, text="--", font=ctk.CTkFont(family="Helvetica", size=42, weight="normal"), text_color="#31333f")
+            val.pack(anchor="w", pady=(5, 0))
             self.metric_widgets[m] = val
 
+        # Horizontal Rule
+        ctk.CTkFrame(self.main_container, height=2, fg_color="#e6e6e8").pack(fill="x", padx=40, pady=20)
+
+    def setup_charts_area(self):
         # --- CHARTS SECTION (DEPARTMENT) ---
-        self.dept_chart_row = ctk.CTkFrame(self.scrollable_container, fg_color="transparent")
-        self.dept_chart_row.pack(fill="x", padx=20, pady=(10, 5))
+        self.dept_chart_row = ctk.CTkFrame(self.main_container, fg_color="transparent")
+        self.dept_chart_row.pack(fill="x", padx=40, pady=(10, 5))
         
-        self.dept_chart_frame = ctk.CTkFrame(self.dept_chart_row, height=350, corner_radius=15)
-        self.dept_chart_frame.pack(fill="both", expand=True, padx=10)
+        ctk.CTkLabel(self.dept_chart_row, text="📈 High-Risk Interactions by Department", 
+                     font=ctk.CTkFont(family="Helvetica", size=20, weight="bold"), 
+                     text_color="#31333f").pack(anchor="w", pady=(0, 20))
+                     
+        self.dept_chart_frame = ctk.CTkFrame(self.dept_chart_row, fg_color="white", height=400)
+        self.dept_chart_frame.pack(fill="both", expand=True)
         
         # --- DEDICATED TOP CONTRIBUTORS SECTION ---
-        ctk.CTkLabel(self.scrollable_container, text="TOP DRUG CONTRIBUTORS", font=ctk.CTkFont(size=14, weight="bold")).pack(anchor="w", padx=30, pady=(20, 0))
-        
-        self.drug_chart_row = ctk.CTkFrame(self.scrollable_container, fg_color="transparent")
-        self.drug_chart_row.pack(fill="x", padx=20, pady=(5, 10))
+        self.drug_chart_row = ctk.CTkFrame(self.main_container, fg_color="transparent")
+        self.drug_chart_row.pack(fill="x", padx=40, pady=(30, 10))
 
-        self.drug_chart_frame = ctk.CTkFrame(self.drug_chart_row, height=350, corner_radius=15)
-        self.drug_chart_frame.pack(fill="both", expand=True, padx=10)
+        ctk.CTkLabel(self.drug_chart_row, text="💊 Most Common Interacting Drugs", 
+                     font=ctk.CTkFont(family="Helvetica", size=20, weight="bold"), 
+                     text_color="#31333f").pack(anchor="w", pady=(0, 20))
 
-        # --- LOGS SECTION ---
-        ctk.CTkLabel(self.scrollable_container, text="DETAILED AUDIT LOGS", font=ctk.CTkFont(size=14, weight="bold")).pack(anchor="w", padx=30, pady=(30, 10))
+        self.drug_chart_frame = ctk.CTkFrame(self.drug_chart_row, fg_color="white", height=400)
+        self.drug_chart_frame.pack(fill="both", expand=True)
         
-        self.logs_table_frame = ctk.CTkFrame(self.scrollable_container, corner_radius=15)
-        self.logs_table_frame.pack(fill="x", padx=30, pady=(0, 50))
-        
-        # Table Header
-        header_f = ctk.CTkFrame(self.logs_table_frame, fg_color="#222", height=40)
-        header_f.pack(fill="x", padx=5, pady=5)
-        cols = [("Patient", 200), ("Interaction", 250), ("Lit. Risk", 300), ("Biochem", 200)]
-        for text, width in cols:
-            lbl = ctk.CTkLabel(header_f, text=text, font=ctk.CTkFont(weight="bold"), width=width, anchor="w")
-            lbl.pack(side="left", padx=10)
+        # Horizontal Rule
+        ctk.CTkFrame(self.main_container, height=2, fg_color="#e6e6e8").pack(fill="x", padx=40, pady=40)
 
-        self.rows_container = ctk.CTkFrame(self.logs_table_frame, fg_color="transparent")
-        self.rows_container.pack(fill="x")
+    def setup_table_area(self):
+        # Section Title
+        ctk.CTkLabel(self.main_container, text="📋 Detailed Safety Audit Log", 
+                     font=ctk.CTkFont(family="Helvetica", size=24, weight="bold"), 
+                     text_color="#31333f").pack(anchor="w", padx=40, pady=(10, 10))
+                     
+        # Filter Dropdown (Match Streamlit selectbox)
+        filter_frame = ctk.CTkFrame(self.main_container, fg_color="transparent")
+        filter_frame.pack(fill="x", padx=40, pady=(10, 20))
+        
+        ctk.CTkLabel(filter_frame, text="Filter by Department:", font=ctk.CTkFont(family="Helvetica", size=14), text_color="#555867").pack(side="left", padx=(0, 10))
+        
+        self.dept_selector = ctk.CTkOptionMenu(filter_frame, values=["All"], command=self.apply_filters, fg_color="#f0f2f6", text_color="#31333f", button_color="#f0f2f6", button_hover_color="#e0e2e6", font=ctk.CTkFont(family="Helvetica", size=14))
+        self.dept_selector.pack(side="left", fill="x", expand=True)
+
+        self.high_risk_var = tk.BooleanVar(value=False)
+        self.high_risk_checkbox = ctk.CTkCheckBox(filter_frame, text="Show High Risk Only", variable=self.high_risk_var, command=self.apply_filters, text_color="#31333f", font=ctk.CTkFont(family="Helvetica", size=14, weight="bold"), fg_color="#ff4d4d", hover_color="#cc0000")
+        self.high_risk_checkbox.pack(side="right", padx=(20, 0))
+
+        # Treeview Table Container
+        table_container = ctk.CTkFrame(self.main_container, fg_color="transparent")
+        table_container.pack(fill="x", padx=40, pady=(0, 50))
+        
+        # Define Columns
+        columns = ('patient_name', 'age', 'Department', 'diagnosis', 'drug_1', 'drug_2', 'literature_risk', 'biochem_risk')
+        self.tree = ttk.Treeview(table_container, columns=columns, show='headings', height=15)
+        
+        # Define Headings and Column widths
+        for col in columns:
+            self.tree.heading(col, text=col)
+            # Adjust column widths based on content type
+            if col == 'age':
+                self.tree.column(col, width=50, anchor="e")
+            elif col in ['patient_name', 'Department', 'drug_1', 'drug_2']:
+                self.tree.column(col, width=150, anchor="w")
+            elif col == 'diagnosis':
+                self.tree.column(col, width=180, anchor="w")
+            elif col == 'literature_risk':
+                self.tree.column(col, width=350, anchor="w")
+            elif col == 'biochem_risk':
+                self.tree.column(col, width=250, anchor="w")
+        
+        # Striped Row Tags
+        self.tree.tag_configure('oddrow', background='white')
+        self.tree.tag_configure('evenrow', background='#f9f9f9')
+        
+        # Add a scrollbar
+        scrollbar = ttk.Scrollbar(table_container, orient=tk.VERTICAL, command=self.tree.yview)
+        self.tree.configure(yscroll=scrollbar.set)
+        
+        scrollbar.pack(side="right", fill="y")
+        self.tree.pack(side="left", fill="both", expand=True)
 
     def load_full_data(self):
         if not os.path.exists(self.db_path):
-            self.title_lbl.configure(text="Database Not Found - Please Run main.py")
+            self.metric_widgets["Total Patients Audited"].configure(text="Err: DB DB Not Found")
             return
 
         try:
@@ -144,23 +199,20 @@ class DDIAuditorGUI(ctk.CTk):
             
             df_list = []
             for table in tables:
-                df_temp = pd.read_sql_query(f"SELECT * FROM {table}", conn)
-                df_temp['Department'] = table.replace("_", " ")
+                df_temp = pd.read_sql_query(f"SELECT *, '{table.replace('_', ' ')}' as Department FROM {table}", conn)
                 df_list.append(df_temp)
             
             conn.close()
             
             if df_list:
                 self.df = pd.concat(df_list, ignore_index=True)
+                # Calculate high risk Boolean
                 self.df['Is_High_Risk'] = self.df['literature_risk'].str.contains('KNOWN RISK', na=False) | \
                                          self.df['biochem_risk'].str.contains('HIGH STRUCTURAL SIMILARITY', na=False)
                 
-                # Update Selectors
-                depts = ["All Departments"] + sorted(self.df['Department'].unique().tolist())
+                # Update Filter Dropdown
+                depts = ["All"] + sorted(self.df['Department'].unique().tolist())
                 self.dept_selector.configure(values=depts)
-
-                patients = ["All Patients"] + sorted(self.df['patient_name'].unique().tolist())
-                self.patient_selector.configure(values=patients)
                 
                 self.apply_filters()
         except Exception as e:
@@ -173,128 +225,151 @@ class DDIAuditorGUI(ctk.CTk):
         
         # Dept Filter
         dept = self.dept_selector.get()
-        if dept != "All Departments":
+        if dept != "All":
             filtered = filtered[filtered['Department'] == dept]
             
-        # Patient Filter
-        patient = self.patient_selector.get()
-        if patient != "All Patients":
-            filtered = filtered[filtered['patient_name'] == patient]
-            
-        # Drug Filter
-        d_search = self.drug_search.get().lower()
-        if d_search:
-            filtered = filtered[
-                (filtered['drug_1'].str.lower().contains(d_search, na=False)) | 
-                (filtered['drug_2'].str.lower().contains(d_search, na=False))
-            ]
-            
-        # Risk Filter
-        if self.risk_only_var.get():
+        # High Risk Filter
+        if self.high_risk_var.get():
             filtered = filtered[filtered['Is_High_Risk'] == True]
             
         self.filtered_df = filtered
         self.update_ui()
 
     def update_ui(self):
-        # Update Metrics
+        # 1. Update Executive Summary Metrics
         total_p = self.filtered_df['patient_name'].nunique()
         total_a = len(self.filtered_df)
         risks = self.filtered_df['Is_High_Risk'].sum()
-        risk_pct = (risks / total_a * 100) if total_a > 0 else 0
+        risk_patients = self.filtered_df[self.filtered_df['Is_High_Risk']]['patient_name'].nunique()
         
-        self.metric_widgets["Patients"].configure(text=str(total_p))
-        self.metric_widgets["Audits"].configure(text=str(total_a))
-        self.metric_widgets["Risk Alerts"].configure(text=str(risks), text_color="#ff4d4d" if risks > 0 else "white")
-        self.metric_widgets["At Risk %"].configure(text=f"{risk_pct:.1f}%")
+        self.metric_widgets["Total Patients Audited"].configure(text=str(total_p))
+        self.metric_widgets["Drug Pairs Checked"].configure(text=str(total_a))
+        self.metric_widgets["High-Risk Interactions"].configure(text=str(risks))
+        self.metric_widgets["Patients at Risk"].configure(text=str(risk_patients))
 
-        # Update Charts (Non-blocking)
+        # 2. Update Charts
         self.render_charts()
         
-        # Update Table Rows
+        # 3. Update Audit Log Table
         self.render_table()
 
     def render_table(self):
-        for child in self.rows_container.winfo_children():
-            child.destroy()
+        # Clear existing rows
+        for item in self.tree.get_children():
+            self.tree.delete(item)
             
-        # Remove hard display limit so all filtered patients are visible
-        display_df = self.filtered_df
+        # Display rows matching Streamlit format
+        columns_to_show = ['patient_name', 'age', 'Department', 'diagnosis', 'drug_1', 'drug_2', 'literature_risk', 'biochem_risk']
         
-        for i, row in display_df.iterrows():
-            f = ctk.CTkFrame(self.rows_container, fg_color="transparent" if i%2 == 0 else "#1a1a1a")
-            f.pack(fill="x", padx=5, pady=1)
-            
-            risk_color = "#ff4d4d" if row['Is_High_Risk'] else "gray"
-            
-            ctk.CTkLabel(f, text=row['patient_name'], width=200, anchor="w", font=ctk.CTkFont(size=12)).pack(side="left", padx=10)
-            ctk.CTkLabel(f, text=f"{row['drug_1']} + {row['drug_2']}", width=250, anchor="w", text_color="#3b8ed0").pack(side="left", padx=10)
-            
-            lit_text = row['literature_risk'].split('-')[0] if '-' in row['literature_risk'] else row['literature_risk']
-            ctk.CTkLabel(f, text=lit_text, width=300, anchor="w", text_color=risk_color).pack(side="left", padx=10)
-            
-            chem_text = row['biochem_risk'].split('(')[0] if '(' in row['biochem_risk'] else row['biochem_risk']
-            ctk.CTkLabel(f, text=chem_text, width=200, anchor="w", text_color=risk_color).pack(side="left", padx=10)
-
-
+        for i, row in self.filtered_df.iterrows():
+            values = []
+            for col in columns_to_show:
+                val = str(row[col])
+                # Emulate Streamlit's visual flags for identical representation if possible, otherwise use text
+                if col == 'literature_risk' and 'KNOWN RISK' in val:
+                    val = f"⚠️ {val}"
+                elif col == 'literature_risk' and 'No obvious flag' in val:
+                    val = f"✅ {val}"
+                elif col == 'biochem_risk' and 'HIGH STRUCTURAL SIMILARITY' in val:
+                    val = f"⚠️ {val}"
+                elif col == 'biochem_risk' and 'Low structural risk' in val:
+                    val = f"✅ {val}"
+                    
+                values.append(val)
+                
+            tags = ('evenrow',) if i % 2 == 0 else ('oddrow',)
+            self.tree.insert('', tk.END, values=values, tags=tags)
 
     def render_charts(self):
-        # Dept Chart
+        # Get risk dataframe
+        df_risk = self.filtered_df[self.filtered_df['Is_High_Risk']]
+        
+        # Dept Chart (Vertical Bar) - Match Streamlit style
         for w in self.dept_chart_frame.winfo_children(): w.destroy()
         # Increased width to match new full-width layout
-        fig1, ax1 = plt.subplots(figsize=(10, 3.5), dpi=100)
-        plt.style.use('dark_background')
+        fig1, ax1 = plt.subplots(figsize=(10, 4), dpi=100)
+        # Use a white background
+        fig1.patch.set_facecolor('white')
+        ax1.set_facecolor('white')
         
-        risk_df = self.filtered_df[self.filtered_df['Is_High_Risk']]
-        if not risk_df.empty:
-            risk_df.groupby("Department").size().sort_values(ascending=True).plot(kind="barh", color="#1f538d", ax=ax1)
+        if not df_risk.empty:
+            dept_counts = df_risk.groupby("Department").size()
+            # Plotly styling: vertical bars, multi-colored
+            colors = ['#1f77b4', '#99ccff', '#ff3333', '#ff9999', '#2ca02c', '#98df8a', '#d62728']
+            colors = colors * (len(dept_counts) // len(colors) + 1) # Repeat if necessary
             
-            # Make the department names smaller so they fit
-            ax1.tick_params(axis='y', labelsize=6)
-            ax1.set_title("High Risks by Department", fontsize=12, pad=10)
-            ax1.set_xlabel("Count", fontsize=10)
-            ax1.set_ylabel("")
+            bars = ax1.bar(dept_counts.index, dept_counts.values, color=colors[:len(dept_counts)])
             
-            # Use tight layout with a pad to ensure labels aren't cut off
-            plt.tight_layout(pad=1.5)
-            # Force extra left margin in case tight_layout fails to account for very long names
-            fig1.subplots_adjust(left=0.25)
+            # Matplotlib styling to match Plotly clean look
+            ax1.set_title("Count of Critical Drug-Drug Interactions", loc='left', fontsize=12, pad=15, weight='bold')
+            ax1.set_ylabel("Count", fontsize=10, color="#555555")
+            ax1.set_xlabel("Department", fontsize=10, color="#555555")
             
+            # Hide top and right spines, make bottom/left light grey
+            ax1.spines['top'].set_visible(False)
+            ax1.spines['right'].set_visible(False)
+            ax1.spines['bottom'].set_color('#e0e0e0')
+            ax1.spines['left'].set_color('#e0e0e0')
+            ax1.tick_params(colors='#555555')
+            
+            # Add light grey horizontal gridlines
+            ax1.yaxis.grid(True, linestyle='-', which='major', color='#f0f0f0', alpha=0.8)
+            ax1.set_axisbelow(True) # Put grid behind bars
+            
+            # Rotate x labels for better fit
+            plt.setp(ax1.xaxis.get_majorticklabels(), rotation=-30, ha="left", rotation_mode="anchor", fontsize=9)
+            
+            plt.tight_layout()
             canvas1 = FigureCanvasTkAgg(fig1, master=self.dept_chart_frame)
-            canvas1.get_tk_widget().pack(fill="both", expand=True, padx=10, pady=10)
+            canvas1.get_tk_widget().pack(fill="both", expand=True)
             canvas1.draw()
         else:
-            ctk.CTkLabel(self.dept_chart_frame, text="No Risk Data for Charts").pack(pady=100)
+            ctk.CTkLabel(self.dept_chart_frame, text="No High-Risk Data Available", text_color="grey").pack(pady=100)
 
-        # Drug Chart (Dedicated Section)
+        # Drug Chart (Pie with Legend) - Dedicated Section
         for w in self.drug_chart_frame.winfo_children(): w.destroy()
-        # Full width figure, slightly taller to accommodate labels comfortably
-        fig2, ax2 = plt.subplots(figsize=(10, 4), dpi=100)
-        if not risk_df.empty:
-            drugs = pd.concat([risk_df['drug_1'], risk_df['drug_2']]).value_counts().head(5)
-            # Use horizontal bar chart instead of pie for better visibility
-            drugs.sort_values(ascending=True).plot(kind="barh", color="#e74c3c", ax=ax2)
+        # Full width figure, significantly wider to comfortably fit the pie and the legend side-by-side
+        fig2, ax2 = plt.subplots(figsize=(10, 5), dpi=100)
+        fig2.patch.set_facecolor('white')
+        ax2.set_facecolor('white')
+        
+        if not df_risk.empty:
+            drugs = pd.concat([df_risk['drug_1'], df_risk['drug_2']])
+            top_drugs = drugs.value_counts().head(10)
             
-            # Make the drug names smaller so they fit
-            ax2.tick_params(axis='y', labelsize=6)
-            ax2.set_xlabel("Involvement Count", fontsize=10)
-            ax2.set_ylabel("")
-            # Title is now handled by the UI label, so removing it from the plot to save space
-            ax2.set_title("")
+            # Title removed from map frame since UI provides it
+            # Plotly default colors
+            pie_colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
             
-            # Add value labels to the bars
-            for container in ax2.containers:
-                ax2.bar_label(container, padding=5, color='white', fontsize=9, weight='bold')
+            wedges, texts, autotexts = ax2.pie(
+                top_drugs.values, 
+                autopct='%1.1f%%', 
+                colors=pie_colors[:len(top_drugs)],
+                pctdistance=0.75,
+                textprops={'color': "white", 'fontsize': 10}
+            )
+            
+            # Add legend to the right, much larger text and well spaced
+            ax2.legend(wedges, top_drugs.index,
+                      title="Drug Name",
+                      loc="center left",
+                      bbox_to_anchor=(1.1, 0.5), # Push legend completely to the right of the pie
+                      fontsize=11,
+                      title_fontsize=12,
+                      frameon=False)
+            
+            plt.setp(autotexts, size=10, weight="bold")
 
-            # Use tight layout with a pad to ensure labels aren't cut off
-            plt.tight_layout(pad=1.5)
-            # Force extra left margin in case tight_layout fails to account for very long names
-            fig2.subplots_adjust(left=0.25)
+            # Expand the layout so the legend is not cut off
+            plt.tight_layout()
+            # Increase right margin explicitly
+            fig2.subplots_adjust(right=0.75)
+            
             canvas2 = FigureCanvasTkAgg(fig2, master=self.drug_chart_frame)
-            canvas2.get_tk_widget().pack(fill="both", expand=True, padx=10, pady=10)
+            canvas2.get_tk_widget().pack(fill="both", expand=True)
             canvas2.draw()
         else:
-            ctk.CTkLabel(self.drug_chart_frame, text="All Clear! No High Risk Drugs Found.").pack(pady=100)
+            ctk.CTkLabel(self.drug_chart_frame, text="No High-Risk Data Available", text_color="grey").pack(pady=100)
 
 if __name__ == "__main__":
     app = DDIAuditorGUI()

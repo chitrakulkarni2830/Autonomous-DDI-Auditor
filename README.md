@@ -82,6 +82,14 @@ Check out `outputs/advanced_queries.sql` to see how to manipulate these database
 
 ---
 
+## 🛡️ Graceful Error Handling
+A truly autonomous system must fail gracefully. The DDI Auditor is built with robust error handling for real-world messy data:
+- **API Down / Rate Limiting**: The `Literature Agent` utilizes retry mechanisms and exponential backoff. If the PubMed API fails entirely, it returns a safe "Unknown Literature Risk" flag rather than crashing the pipeline.
+- **Invalid SMILES Strings**: Chemical datasets often contain malformed SMILES representations. The `Biochemist Agent` wraps RDKit molecular conversions in `try-except` blocks. If a molecule cannot be parsed, it logs the error and gracefully skips the structural comparison, ensuring the rest of the audit continues uninterrupted.
+- **Database Resilience**: The system uses `sqlite3` best practices. It checks for table existence before querying, handles empty returns safely, and prevents UI crashes if the generator hasn't been run yet.
+
+---
+
 ## 🧪 Architecture Flow
 1. **Main Orchestrator** -> Asks **Database Agent** for Complex Patients.
 2. **Database Agent** -> Queries SQLite, returns patients with 3+ meds.
